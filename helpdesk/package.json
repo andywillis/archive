@@ -1,0 +1,22 @@
+{
+  "name": "helpdesk",
+  "main": "helpdesk.js",
+	"version": "0.1",
+  "description": "Single-page backbone.js application using require.js.",
+  "keywords": [
+    "backbone",
+    "require",
+		"helpdesk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andywillis/helpdesk.git"
+  },
+  "author": {
+    "name": "Andy Willis",
+    "email": "awillis@lavabit.com"
+  },
+  "engines": {
+    "node": ">= 0.5.0"
+  }
+}

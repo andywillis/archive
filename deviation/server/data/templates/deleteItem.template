@@ -1,0 +1,14 @@
+<form name="add" id="deleteItem" action="/delete" method="post" enctype="multipart/form-data">
+	<fieldset xmlns="http://www.w3.org/1999/xhtml">
+		<legend>Delete item</legend>
+		<div class="required">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" size="25" required>
+		</div>
+		<div class="required">
+			<label for="submit"></label>
+			<input class="inputSubmit" type="button" id="submit" required value="SUBMIT" />
+			<input type="hidden" id="id" required value="#{id}" />
+		</div>
+	</fieldset>
+</form>

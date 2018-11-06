@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,300,400italic,600,600italic,300italic);
+
+*
+ { font-family: 'Open Sans', sans-serif; }
+
+.jumbotron {
+  position: relative;
+  padding-top: 20px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  background: #020031; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  rgba(40,80,130,1) 0%, rgba(230,230,70,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+#linksTable td:hover {
+  background-color:rgba(250,250,250,1);
+  cursor: pointer;
+}
+
+#linksTable img {margin-left:auto;margin-right:auto;padding:10px;}
+#linksTable td a {
+  text-decoration: none;
+}
+#linksTable td .caption {
+  margin-top:20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 125%;
+  color: rgba(80,90,150,1);
+  text-decoration: none;
+}
+ 
+.imageLink {
+  display: block;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+#linksTable td:hover .imageLink {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+
+.jumbotron h1 {padding-bottom: 0px}
+ 
+ .cabbg
+	{ background-color: rgba(230,230,70,1);
+		color: rgba(255,255,230,1);
+		margin-top -50px;
+		}
+		
+svg
+	{ float:left;font-size:19px;font-weight:600; opacity: .8}
+	
+.jumbotron {margin-bottom: 10px}
+
+h3 {margin-top: 40px}
+
+.date {margin-top: -5px; font-style: italic; }
+
+.date .label {margin-right:10px}
+
+td.tlabel {text-align: right; color: rgba(50,130,50,1)}
+
+.time {border-top:1px solid rgba(130,130,130,1);}
+
+address h3 {font-size: 20px; margin:0}
+
+.fax {margin-left: 20px}
+
+.footer  {margin-top:40px;padding: 40px;background-color: black;color:white}
+
+/* Pattern overlay
+------------------------- */
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+}
+.jumbotron:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/cab_header.png) no-repeat top right;
+  opacity: .3;
+}
+
+.map {color: red;padding:2px 5px 2px 5px}
+
+
+.map:hover {cursor:pointer;background-color:red; color:white}

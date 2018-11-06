@@ -1,0 +1,13 @@
+.SubTitle {
+  font-size: 1.7em;
+  color: #154380;
+  font-weight: 600;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .SubTitle {
+    font-size: 2em;
+  }
+}

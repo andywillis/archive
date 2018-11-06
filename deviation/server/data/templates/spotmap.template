@@ -1,0 +1,22 @@
+<a class="postAnchor" name="#{docid}"></a>
+<div class="spotmap">
+	<div class="header">
+		<h2><a href="/spotmaps/view/#{docid}/#{urlTitle}">#{title}</a></h2>
+		<span class="date">#{date}</span>
+	</div>
+	<div class="spotmapbody">
+		#{body}
+	</div>
+	<div class="description">#{description}</div>
+	<div class="footer">
+		<div class="category">
+			<span><a href="/spotmaps/category/#{category}">#{category}</a></span>
+		</div>
+		<div class="swatch">
+			<span class="swatchImage"><a href="/getASEFile?#{ASE}" title="Download swatch in Adobe ASE format">#{swatch}</a></span>
+		</div>
+		<div class="taglist">
+			#{tags}
+		</div>
+	</div>
+</div>

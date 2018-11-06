@@ -1,0 +1,34 @@
+<%  var col
+    switch(data.priority) {
+      case 1: col = 'class="p1"'; break; 
+      case 2: col = 'class="p2"'; break; 
+      case 3: col = 'class="p3"'; break; 
+    }
+    data.description = data.description.replace(/\n/g,'<br>')
+%>
+<div class="details" id="viewCall">
+  <div class="returnToCalls">Return to call list</div>
+  <div class="respond">Respond</div>
+  <div>
+    <table class="datatable call" id="call">
+      <tr><td>Callid</td><td><%= data.callid %></td></tr>
+      <tr <%= col %>><td>Priority</td><td><%= data.priority %></td></tr>
+      <tr><td>Date</td><td><%= data.date%></td></tr>
+      <tr><td>Client</td><td><%= data.client %></td></tr>
+      <tr><td>Service</td><td><%= data.service %></td></tr>
+      <tr><td>Summary</td><td><%= data.summary %></td></tr>
+      <tr><td>Description</td><td><%= data.description %></td></tr>
+      <% if (data.notes && data.notes.length > 0) { %>
+        <tr class="callnotes">
+          <td>Notes</td>
+          <td>
+            <% _.each(data.notes, function(note){ %>
+              <span class="notetext"><%= note.text %></span>
+              <span class="smallgrey">&mdash; <%= note.author %>, <%= note.date %></span>
+            <% }); %>
+          </td>
+        </tr>
+      <% } %>
+    </table>
+  </div>
+</div>

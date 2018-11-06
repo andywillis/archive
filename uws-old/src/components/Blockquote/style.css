@@ -1,0 +1,35 @@
+.Blockquote {
+  margin-left: 1em;
+  margin-right:  1em;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
+  background-color: #efefef;
+  padding: 0.5em;
+  font-size: 1.4em;
+}
+
+.Blockquote + .Blockquote {
+  margin-top: -1.3em;
+}
+
+.Blockquote a,
+.Blockquote a:link,
+.Blockquote a:visited,
+.Blockquote a:active {
+  font-size: 1em;
+  text-decoration: none;
+  color: #c60000;
+}
+
+.Blockquote a:hover {
+  cursor: pointer;
+  background-color: #CFE6FD;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Blockquote {
+    font-size: 1.7em;
+  }
+}

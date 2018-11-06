@@ -1,0 +1,226 @@
+<?xml version="1.0"?><rss version="2.0"><channel><title>Deviation blog feed</title><link>http://deviation.nodejitsu.com</link><description>All the posts from the Deviation blog.</description><item>
+	<title>Windows installation of node-canvas</title>
+	<link>http://deviation.nodejitsu.com/blog/view/6vhmuvia8hd34l7i5ygxitzot46kdh5a</link>
+	<description><![CDATA[<p>After what seemed like decades trying to get node-canvas to work on my x64 Windows 7 development box, success! Here&#39;s the process I used:
+
+</p>
+<h3>npm</h3>
+<p>Make sure npm is installed and up-to-date.
+
+</p>
+<blockquote>
+<p>> node cli.js install npm -gf
+
+</p>
+<p>> npm update -g npm
+
+</p>
+</blockquote>
+<h3>node-gyp</h3>
+<p>node-gyp is a build tool.
+
+</p>
+<ol>
+<li>Install <a href="http://www.python.org/download/releases/2.7.2#download">Python 2.7.2</a>. Version 3 is not yet supported.</li>
+<li>Install <a href="http://www.microsoft.com/visualstudio/en-us/products/2010-editions/visual-cpp-express">Microsoft Visual C++ Express</a> if you don&#39;t have the full version.</li>
+<li>For 64-bit builds of node and native modules you will also need the <a href="http://www.microsoft.com/download/en/details.aspx?displayLang=en&amp;id=8279">Windows 7 64-bit SDK</a>.</li>
+</ol>
+<blockquote>
+<p>> npm install -g node-gyp
+
+</p>
+</blockquote>
+<p>It very important that you reboot the machine after these installations.
+
+</p>
+<h3>node-canvas</h3>
+<ol>
+<li>Download the all-in-one <a href="http://ftp.gnome.org/pub/gnome/binaries/win32/gtk+/2.24/gtk+-bundle_2.24.10-20120208_win32.zip">GTK bundle</a> and unzip it to c:\GTK (modifying the binding.gyp file if this changes).</li>
+<li>Download the node-canvas <a href="https://github.com/LearnBoost/node-canvas">zip file</a> and put it in the node_modules folder &#39;canvas&#39;.</li>
+<li>Command in to the canvas folder and run:</li>
+</ol>
+<blockquote>
+<p>> node-gyp configure
+
+</p>
+</blockquote>
+<ol>
+<li>Copy all the dll files from c:\GTK to the canvas\build\Release folder.</li>
+<li>Copy IEShims.dll from c:\program files(x86)\Internet Explorer to the canvas\build\Release folder</li>
+</ol>
+<blockquote>
+<p>> node-gyp build
+
+</p>
+</blockquote>
+<p>This will build the canvas.node object. If the node engine still doesn&#39;t recognise it, use the <a href="http://www.dependencywalker.com/">Dependancy Walker</a> to inspect the canvas.node object to see what dlls are missing. Add those dlls to the canvas\build\Release folder and re-run the process.
+
+</p>
+<p>In addition, having used this process to build canvas, you can also build <a href="http://d3js.org/">d3.js</a> without fail.</p>
+]]></description>
+</item>,<item>
+	<title>Galaga</title>
+	<link>http://deviation.nodejitsu.com/blog/view/s1ogtlwbiual6c7bk0ylfwh7rn3rwghn</link>
+	<description><![CDATA[<div class='image'><img class='main' src='/deviation/images/galaga.png' alt='Operations officer playing Galaga during office hours - The Avengers.'/></div>
+
+<p>&quot;That man is playing Galaga... thought we wouldn&#39;t notice, but we did.&quot;</p>
+]]></description>
+</item>,<item>
+	<title>Sunset swan</title>
+	<link>http://deviation.nodejitsu.com/blog/view/btws7y6g0zstl1px3xugb37kw65wxpy5</link>
+	<description><![CDATA[<div class='image'><img class='main' src='/deviation/images/sunset_swan.jpg' alt='Photo of a swan on Sandwich Bay at sunset.'/></div>
+
+<p>A swan loafing about in the bay.</p>
+]]></description>
+</item>,<item>
+	<title>A Walk to The Bay</title>
+	<link>http://deviation.nodejitsu.com/blog/view/nzrxrrtbru7tn90k150omx0a64eea5u3</link>
+	<description><![CDATA[<p><div class='image'><img class='main' src='/deviation/images/poppyfield.jpg' alt='On a walk to Sandwich Bay'/></div>
+</p>
+<p>Field with poppies near to Sandwich Bay.</p>]]></description>
+</item>,<item>
+	<title>Last Post Radio</title>
+	<link>http://deviation.nodejitsu.com/blog/view/a7znpr8pv8o5s3zu6wvpgaan8qo54a0v</link>
+	<description><![CDATA[<p>Got the <a href="/radio">Last Post Radio page</a> coded quickly despite the ever-changing status of SoundCloud&#39;s API.
+
+</p>
+<p>The page selects some tunes (techno) from the SC database based on the tags attached to the last post made on the Deviation blog.
+
+</p>
+<p>If you <a href="/radio">cross over now</a> you will hear tracks based on:
+
+</p>
+<ul>
+<li>last</li>
+<li>post</li>
+<li>radio</li>
+<li>blog</li>
+<li>api</li>
+<li>soundcloud</li>
+<li>frustration</li>
+</ul>
+<p>At some point I&#39;ll update it with a better UI, perhaps with added waveform goodness.</p>
+]]></description>
+</item>,<item>
+	<title>Ocean house</title>
+	<link>http://deviation.nodejitsu.com/blog/view/1e5566bc2edfa388e2fb3ef3ed000b43</link>
+	<description><![CDATA[<p><div class='image'><img class='main' src='/deviation/images/oceanhouse.jpg' alt='A small house suspended above the sea on an iron frame'/></div>
+</p>
+<p><a href="http://www.floridamemory.com/items/show/245105?cid=49&amp;pc=Joseph%20Janney%20Steinmetz%20Collection">Deactivated light station on stilts</a> located near the entrance to the Northwest Channel leading into Key West, Florida.</p>]]></description>
+</item>,<item>
+	<title>Nicholas Jaar mix</title>
+	<link>http://deviation.nodejitsu.com/blog/view/06303f3085244f362029c81e0d0002cb</link>
+	<description><![CDATA[<p><iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F46864151&show_artwork=true"></iframe></p>]]></description>
+</item>,<item>
+	<title>Doe Jassen mix</title>
+	<link>http://deviation.nodejitsu.com/blog/view/cd17c81b24d047855641b61991000ae4</link>
+	<description><![CDATA[<p><iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48271330&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700"></iframe></p>]]></description>
+</item>,<item>
+	<title>The Girl and the Fox</title>
+	<link>http://deviation.nodejitsu.com/blog/view/cd17c81b24d047855641b619910009a4</link>
+	<description><![CDATA[<p><iframe src="http://player.vimeo.com/video/43332921" width="100%" height="280" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/43332921">The Girl and the Fox</a> from <a href="http://vimeo.com/base14">Base14</a> on <a href="http://vimeo.com">Vimeo</a>.</p>]]></description>
+</item>,<item>
+	<title>Windows 8</title>
+	<link>http://deviation.nodejitsu.com/blog/view/a25cd4177f94493d35a1c77ccd000037</link>
+	<description><![CDATA[<p><a href="http://www.metafilter.com/116550/Why-Windows-8-Scares-Me-and-Should-Scare-You-Too#4376012">&quot;They&#39;ve turned my dual 24&quot; monitors into a giant phone&quot;</a> - the best one-sentence summary of Windows 8 I&#39;ve seen.</p>
+]]></description>
+</item>,<item>
+	<title>Silent Professor</title>
+	<link>http://deviation.nodejitsu.com/blog/view/4503b344b51348a3097c6afe8e000191</link>
+	<description><![CDATA[<p>&quot;I carry her in my heart, because I held hers.&quot;
+
+</p>
+<p><a href="http://ask.metafilter.com/216722/sustainability-after-death#3127583">On working with cadavers</a>.</p>
+]]></description>
+</item>,<item>
+	<title>Quote</title>
+	<link>http://deviation.nodejitsu.com/blog/view/e7ee18396faa5d3512a888258000049f</link>
+	<description><![CDATA[<p>All the ways of life are pleasant; in the market-place are goodly companionships, and at home griefs are hidden; the country brings pleasure, seafaring wealth, foreign lands knowledge. Marriages make a united house, and the unmarried life is never anxious; a child is a bulwark to his father; the childless are far from fears; youth knows the gift of courage, white hairs of wisdom: therefore, taking courage, live, and beget a family.
+- Julianus Aegyptius</p>
+]]></description>
+</item>,<item>
+	<title>Klout is for idiots</title>
+	<link>http://deviation.nodejitsu.com/blog/view/3edb58014499615442fcb960250006c9</link>
+	<description><![CDATA[<p>Probably <a href="http://www.schmutzie.com/weblog/2011/11/20/why-i-quit-klout-why-you-should-too-and-how-to-opt-out.html">the best summary of reasons</a> to
+
+</p>
+<ul>
+<li>not join Klout</li>
+<li>delete your Klout account if you have joined</li>
+</ul>
+<p>Note the section at the bottom relating to the removal of app settings from the various services.
+
+</p>
+<p>It&#39;s probably a good idea to mention <a href="http://namechk.com">http://namechk.com</a> again - the app that allows you to see all the social sites you might have signed up for (assuming you&#39;ve used the same handle for each site.)</p>
+]]></description>
+</item>,<item>
+	<title>How Yahoo killed Flickr</title>
+	<link>http://deviation.nodejitsu.com/blog/view/7d5c3c9433240462da7548f2070004a6</link>
+	<description><![CDATA[<p><a href="http://gizmodo.com/5910223/how-yahoo-killed-flickr-and-lost-the-internet">Good article</a> on the destruction of Flickr by Yahoo.</p>
+]]></description>
+</item>,<item>
+	<title>Forensic Mashup</title>
+	<link>http://deviation.nodejitsu.com/blog/view/e859460984cadc073e7a93503a000f1f</link>
+	<description><![CDATA[<p><a href="http://thecomposites.tumblr.com">thecomposites@tumblr</a></p>
+]]></description>
+</item>,<item>
+	<title>Progress report</title>
+	<link>http://deviation.nodejitsu.com/blog/view/4170979c368873db76bd025f760002f3</link>
+	<description><![CDATA[<h3>Spotmaps</h3>
+<p>The Spotmap project is almost complete. After a couple of months finagling with the Python code doing stupid things with classes and modules, I ejected all the code and went back to the original one-file process because it was just getting too ridiculous by far to keep track of the changes. That left the server implementation which, in the end, I decided to code up in javascript via nodeJS. Which meant I had to learn the how-tos and wherefores of nodeJS as quickly as possible.
+
+</p>
+<h3>Blog</h3>
+<p>Considering the route for my blog is to hold all posts in memory for quick load times and filtering. I might hold off on this as loading at browser reset is a little easier in Development, and with one screen of text &lt; 2k this isn&#39;t posing a problem or a slowdown.
+
+</p>
+<h3>Kanban scheduler</h3>
+<p>This is new. See <a href="http://www.simple-kanban.com/">http://www.simple-kanban.com/</a> for more details.
+
+</p>
+<p>Or, more to the point, <a href="http://leansoftwareengineering.com/ksse/scrum-ban/">Scrum-ban</a> (Kana-scrum?).
+
+</p>
+<h3>Posts -&gt; Images</h3>
+<p>Sort of a steganography exercise, coding blog posts into canvas images using the hex equivalent of ascii characters to produce RGB values. You can see the results at the top of each post - the blocky image that&#39;s been opacitied to hell. The neat thing about it is that it doesn&#39;t just store the text of the post, it stores the JSON post object in its entirety.
+
+</p>
+<p>At the moment the image size is 50 spots per row, and each spot is 2 pixels square. Already you can see the space that has been saved. Changing the spot size and the canvas width should provide us with some great sampling opportunities once more posts are written, although I do need to sort out a better colour algorithm.\n\nBy the way, the main data in the post is written in markdown and converted to HTML on the fly.</p>
+]]></description>
+</item></channel><channel><title>Deviation spotmap feed</title><link>http://deviation.nodejitsu.com</link><description>All the spotmaps from the Deviation site.</description><item>
+	<title>It! The Terror From Beyond Space</title>
+	<link>http://deviation.nodejitsu.com/spotmaps/view/sle8wp209inodqfmahqkpd7x800yswc8</link>
+	<description><![CDATA[Spotmap image.]]></description>
+</item>,<item>
+	<title>24hr Party People</title>
+	<link>http://deviation.nodejitsu.com/spotmaps/view/0p5q19mpuzgni7dt0x6dq28xg1284rth</link>
+	<description><![CDATA[Spotmap image.]]></description>
+</item>,<item>
+	<title>Scanners</title>
+	<link>http://deviation.nodejitsu.com/spotmaps/view/6cv4l8c3wqn869sx5h59cm62r4i9laqf</link>
+	<description><![CDATA[Spotmap image.]]></description>
+</item>,<item>
+	<title>Avatar</title>
+	<link>http://deviation.nodejitsu.com/spotmaps/view/z6tbvhik2ubdaniawqrgvy8syyg9leqh</link>
+	<description><![CDATA[Spotmap image.]]></description>
+</item>,<item>
+	<title>Spider</title>
+	<link>http://deviation.nodejitsu.com/spotmaps/view/il2px6idau0xcvqivnp0h7qeoubi9umn</link>
+	<description><![CDATA[Spotmap image.]]></description>
+</item>,<item>
+	<title>Silent Running</title>
+	<link>http://deviation.nodejitsu.com/spotmaps/view/iixdb9znu0aomhk2h1nhtwlmghun106u</link>
+	<description><![CDATA[Spotmap image.]]></description>
+</item>,<item>
+	<title>Videodrome</title>
+	<link>http://deviation.nodejitsu.com/spotmaps/view/ezipc9f61gqtmneexw1groo5xn9olzms</link>
+	<description><![CDATA[Spotmap image.]]></description>
+</item>,<item>
+	<title>Untouchables, The</title>
+	<link>http://deviation.nodejitsu.com/spotmaps/view/a7znpr8pv8o5s3zu6wvpgaan8qo54a0g</link>
+	<description><![CDATA[Spotmap image.]]></description>
+</item>,<item>
+	<title>Terminator, The</title>
+	<link>http://deviation.nodejitsu.com/spotmaps/view/a7znpr8pv8o5s3zu6wvpgaan8qo54a0f</link>
+	<description><![CDATA[Spotmap image.]]></description>
+</item></channel></rss>

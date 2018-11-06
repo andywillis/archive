@@ -1,0 +1,651 @@
+/**
+ *
+ * Global
+ *
+ */
+
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic,600,600italic,300italic);
+
+	*
+	{ color: black; font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; text-decoration: none; text-transform: inherit; position: relative }
+
+	div#markup
+
+		{display: none}
+
+/**
+ *
+ * Decoration
+ *
+ */
+
+	div.dashboardStrip
+	
+		{ border-radius: 5px }
+
+	img.main
+,	img.spotmapImg
+,	iframe
+	
+ 		{ border-radius: 10px } 	
+
+	div.strips div.poststrip
+
+		{ border: 2px solid rgba(255, 63, 47, 0.4) }
+
+	div.strips div.spotmapstrip
+
+		{ border: 2px solid rgba(63, 147, 200, 0.4) }
+
+	img.main
+,	iframe
+
+	 	{ border: 10px solid rgba(80,60,60,0.6) }
+
+	img.spotmapImg
+
+	 	{ border: 10px solid rgba(180,160,160,0.6) }
+
+	div.post div.textpostbody a
+
+	 	{ border-bottom: 1px solid rgba(200, 100, 120, 0.4) }
+
+	ul
+,	ol
+
+	 	{ list-style: none }
+
+	div.post div.textpostbody li:before
+
+ 		{ content: '--- ' }
+
+	div.post div.header
+,	div.spotmap div.header
+
+		{ border-bottom: 6px solid rgba(100,100,100,0.4) }
+
+	header
+
+		{ border-bottom: 12px solid rgba(100,200,155,0.1) }
+	
+	div.post h2
+,	div.spotmap h2
+
+		{ text-shadow: 1px 1px rgba(55,55,55,0.3), -1px 1px rgba(55,55,55,0.3), 1px -1px rgba(55,55,55,0.3), -1px -1px rgba(55,55,55,0.3) }
+
+	div.post p
+,	div.spotmap div.description p
+,	div.post div.textpostbody ul li
+,	div.post div.textpostbody ol li
+,	div.content p
+,	div.content em
+,	div.content strong
+
+		{ text-shadow: 1px 1px rgba(5,5,5,0.3), -1px 1px rgba(5,5,5,0.3), 1px -1px rgba(5,5,5,0.3), -1px -1px rgba(5,5,5,0.3)	}
+
+/**
+ *
+ * Color
+ *
+ */
+
+	div.strips div.poststrip:hover
+,	div.strips div.spotmapstrip:hover
+
+		{ border: 2px solid rgba(200,200,200,0.3) }
+
+	div.dashboardStrip
+
+		{ color: rgba(0,0,0,1) }
+
+	div#categoryList h2
+,	div#tagList h2
+
+		{ color: rgba(0,0,0,0.3) }
+
+	section#rightSidebar p
+,	section#rightSidebar ul li
+
+		{ color: rgba(0,0,0,0.8) }
+
+	section#rightSidebar p:hover
+,	section#rightSidebar ul li:hover
+
+		{ color: rgba(0,0,0,1) }
+
+	div.post p
+,	div.spotmap div.description p
+,	div.post div.textpostbody ul li
+,	div.post div.textpostbody ol li
+,	div.content p
+,	div.content em
+,	div.content strong
+,	div.spotmap
+,	div.noscript
+
+		{ color: rgba(255,255,255,1) }
+
+	div.post h2
+,	div.spotmap h2
+
+		{ color: rgba(80,60,60,0.6) }
+
+	h1
+
+		{ color: rgba(255,0,0,0.5) }
+
+	a:visited
+, a:link
+, a:active
+
+		{ color: inherit }
+
+	div.post div.textpostbody a
+,	div.spotmap div.description a
+,	div.content a
+		{ background-color: rgba(200, 100, 120, 0.4) }
+
+	div.post div.textpostbody a:hover
+,	div.spotmap div.description a:hover
+,	div.content a:hover
+
+		{ background-color: rgba(200, 100, 120, 0.8) }
+
+
+	div.strips div.poststrip
+
+		{ background-color: rgba(255, 63, 47, 0.4) }
+
+	div.strips div.spotmapstrip
+
+		{ background-color: rgba(63, 147, 200, 0.4) }
+
+	div.noscript
+		{ background-color: rgba(25, 25 , 25, 0.5) }
+
+/*	html
+		{ background-color: rgba(250,250,250,1) } */
+
+	div.post div.footer div.taglist ul li
+,	div.spotmap div.footer div.taglist ul li
+
+		{ background-color: rgba(150,150,200,0.4) }
+
+	div.post div.footer div.taglist ul li:hover
+,	div.spotmap div.footer div.taglist ul li:hover
+,	div#tagList ul li:hover
+
+		{ background-color: rgba(150,150,200,0.8) }
+
+	div.post div.footer div.category span
+,	div.spotmap div.footer div.category span
+
+		{ background-color: rgba(150,200,150,0.4) }
+
+	div.post div.footer div.category span:hover
+,	div.spotmap div.footer div.category span:hover
+,	div#categoryList ul li:hover
+
+		{ background-color: rgba(150,200,150,0.8) }
+
+	body
+
+		{ background-color: rgba(99,116,112,1) }
+
+	header
+,	footer
+
+		{ background-color: rgba(100,200,155,0.2) }
+
+	nav li:hover
+,	div.post div.textpostbody blockquote
+
+		{ background-color: rgba(100,155,200,0.2) }
+
+	section#rightSidebar
+
+		{ background-color: rgba(80,135,180,0.2) }
+
+	section#links
+
+		{ background-color: rgba(180,135,80,0.2) }
+
+/**
+ *
+ * Fonts
+ *
+ */
+
+	div.post span.date
+,	div.spotmap span.date
+
+		{ font-size: 14px	}
+
+	div.dashboardStrip
+
+		{ font-size: 16px	}
+
+	div.post p
+,	div.spotmap div.description p
+,	div.post div.textpostbody ul li
+,	div.post div.textpostbody ol li
+,	div.post div.footer
+,	div.spotmap div.footer
+,	footer
+
+		{ font-size: 18px }
+
+	div#categoryList h2
+,	div#tagList h2
+,	div.post div.textpostbody h3
+,	div.content h3
+
+		{ font-size: 30px }
+
+	nav li
+,	div.spotmap div.header h2
+,	section#links
+,	div.content h2
+
+		{ font-size: 33px }
+
+	h1
+
+		{ font-size: 88px }
+
+	div.post div.header h2
+,	div.spotmap div.header h2
+
+		{ font-size: 140px }
+
+	nav li
+,	div.post div.textpostbody h3
+,	div.content h3
+,	div.content h2
+,	footer
+
+		{ font-weight: 300 }
+
+	div.post p
+,	div.spotmap div.description p
+,	div.post div.textpostbody ul li
+,	div.post div.textpostbody ol li
+,	div.post div.footer
+,	div.spotmap div.footer
+,	div.post span.date
+
+		{ font-weight: 400 }
+
+	h1
+,	div.post div.header h2
+,	div.spotmap div.header h2
+
+		{ font-weight: 700 }
+
+	h1
+, nav li
+,	div.content p
+,	footer
+
+		{ letter-spacing: .02em }
+
+	div.post h2
+,	div.spotmap h2
+
+		{ line-height: 122px }
+
+	div.post p
+,	div.spotmap div.description p
+,	div.content p
+,	div.post div.footer
+,	div.spotmap div.footer
+
+		{ line-height: 22px }
+
+/**
+ *
+ * Display
+ *
+ */
+
+ 	div.post h2
+, div.spotmap h2
+
+		{ clear: both }
+
+	h1
+,	div#categoryList ul li
+,	div#tagList ul li
+,	div.taglist ul li
+, nav li
+, ul
+, ol
+,	nav
+
+		{ display: inline-block }
+
+	div.dashboardStrip img
+
+		{ display: inline }
+
+	img.main
+,	img.spotmapImg
+,	iframe
+,	div.less
+,	div.dashboardStrip img
+
+	 	{ float: left }
+
+	div.more
+
+		{ float: right }
+
+	div.post div.textpostbody blockquote p
+
+		{ margin: 0 }	
+
+ 	img.main
+, img.spotmapImg
+,	iframe
+
+ 		{ margin: 0px 20px 20px 0px }
+
+	div.taglist ul li
+
+		{ margin: 0px 5px 5px 0px }
+
+ 	h1
+,	nav
+
+ 		{ margin: 0px 30px 0px 30px }
+
+	div.post div.header
+,	div.spotmap div.header
+,	div.post div.textpostbody
+,	div.spotmap div.spotmapbody
+,	div.post div.textpostbody h3
+	
+		{ margin-bottom: 25px }
+
+	div#categoryList h2
+,	div#tagList h2
+
+		{ margin-bottom: 10px }
+
+	div.post div.textpostbody ul li
+,	div.post div.textpostbody ol li
+
+		{ margin-bottom: 1px }
+
+	div.dashboardStrip img
+
+		{ margin-right: 10px }
+
+	nav li
+
+		{ margin-right: 20px }
+
+	div#categoryList h2
+,	div#tagList h2
+
+		{ margin-top: 10px }
+
+	 div.post div.textpostbody ul li
+,	 div.post div.textpostbody ol li
+
+	 	{ margin-left: 60px }
+
+	div.post p
+,	div.post blockquote
+,	div.spotmap div.description p
+,	div.content p
+
+		{	margin: 20px 0px 20px 0px }
+
+	div.dashboardStrip
+	
+		{ margin-bottom: 3px }
+
+
+	div.post div.footer div.taglist
+,	div.spotmap div.footer div.taglist
+,	div.post div.footer div.category
+,	div.spotmap div.footer div.category
+
+		{ margin: 25px 0px 25px  0px }
+
+	div#posts div.post
+,	div#spotmapGallery div.spotmap
+
+		{ margin: 75px 150px 150px 150px }
+
+	div.strips
+
+		{ margin: 0px auto }
+
+	div.content
+		{ padding: 40px }
+
+	div.post
+,	div.spotmap
+,	div.taglist
+,	section#links
+
+		{ overflow: hidden }
+
+	div.post div.footer div.taglist ul li
+,	div.post div.footer div.category span
+,	div.spotmap div.footer div.taglist ul li
+,	div.spotmap div.footer div.category span
+
+		{ padding: 2px 10px 2px 10px }
+
+	div#categoryList ul li
+,	div#tagList ul li
+
+		{ padding: 2px 10px 2px 10px }
+
+	div.post div.textpostbody
+,	div.spotmap div.spotmapbody
+
+		{ padding: 10px 10px 10px 10px }
+
+	div.dashboard
+
+		{ padding: 75px 0px 75px 0px }
+
+	div.dashboardStrip
+,	div.noscript
+		
+		{ padding: 5px 5px 5px 5px }
+
+	section#rightSidebar
+,	section#links
+
+		{ padding: 20px 30px 20px 30px }
+
+	nav li
+
+		{ padding: 2px 10px 2px 10px }
+
+	div.post div.textpostbody blockquote p
+
+		{ padding: 5px 5px 5px 5px }
+
+	div.post li:before
+
+ 		{ padding-right: 17px }
+
+	footer
+
+		{ padding: 20px }
+
+	div.dashboardStrip
+
+		{ text-align: left }
+
+	div.noscript
+
+		{ text-align: center }
+
+	div.more
+,	footer
+
+		{ text-align: right }
+
+	div.wrapper
+		
+		{ margin: 0 auto -20px }
+
+/**
+ *
+ * Height
+ *
+ */
+
+	div.wrapper
+,	html
+, body
+
+		{ height: 100% }
+
+	div.wrapper
+	
+		{ height: auto !important }
+
+	div.wrapper
+
+		{ min-height: 100% }
+
+	footer
+,	div.push
+		{ height: 20px }
+
+
+/**
+ *
+ * Width
+ *
+ */
+
+	div.dashboardStrip
+
+		{ width: 480px }
+
+	div.strips
+
+		{ width: 500px }
+
+	div.less
+,	div.more
+
+		{ width: 400px }
+
+	iframe
+
+		{ width: 600px }
+
+/**
+ *
+ * Absolute positioning
+ *
+ */
+
+	div.less
+
+		{ left: 0px }
+
+	div.more
+
+		{ right: 0px }
+
+/**
+ *
+ * Table
+ *
+ */
+
+/**
+ *
+ * EOF
+ *
+ */
+
+ /* FORM */
+
+#addPost {
+	color: rgba(0,0,0,1);
+}
+
+form {
+	color: rgba(0,0,0,1);
+  width: 850px;
+  padding: 10px 10px 10px 10px;
+}
+
+fieldset {
+  padding: 10px 10px 10px 10px;
+}
+
+form div {
+	color: rgba(0,0,0,1);
+  clear: left;
+  display: block;
+  width: 800px;
+  margin: 5px 0px 5px 0px;
+  padding: 1px 3px;
+}
+
+label {
+	color: rgba(0,0,0,1);
+  vertical-align:top;
+  display: block;
+  float: left;
+  width: 100px;
+  padding: 3px 5px;
+  margin: 0px 10px 5px 0px;
+  text-align: right;
+}
+
+textarea, input  {
+  vertical-align:top;
+  display: block;
+  float: left;
+  width: 600px;
+  padding: 3px 5px;
+  margin: 0px 0px 5px 0px;
+  border: 1px solid rgba(0,0,0,0.4);
+}
+
+select {
+  vertical-align:top;
+  padding: 3px 2px;
+  display: block;
+  float: left;
+  width: 610px;
+  margin: 0px 0px 5px 0px;
+  border: 1px solid rgba(0,0,0,0.4);
+}
+
+textarea {
+  height: 200px;
+}
+
+.inputSubmit:hover {
+	cursor: pointer;
+	background-color: rgba(100, 255, 100, 0.7);
+}
+
+.inputSubmit {
+  width: 612px;
+  background-color: rgba(100, 255, 100, 0.4);
+}
+
+del {
+	text-decoration: line-through;
+	color: rgba(255,255,255,0.4);
+}
+
+.bold {
+	font-weight: 700;
+}

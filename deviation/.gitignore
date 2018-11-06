@@ -1,0 +1,4 @@
+run.bat
+*sublime*
+/server/lib/config.js
+/server/data/markdown/spotmaps.md

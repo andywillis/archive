@@ -1,0 +1,65 @@
+.buttonStrip {
+  margin-top: 0.5em;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+	flex: 1;
+	background-color: #efefef;
+	margin: 0.3em 0.5em 0.3em 0.5em;
+	padding: 0.65em;
+  text-align: center;
+  text-transform: uppercase;
+	border: 1px solid #565656;
+  width: 60%;
+}
+
+.buttonStrip.init .button {
+  background-color: #e1deb7;
+	margin: 1.4em 0.5em 0em 0.5em;
+  padding: 0.5em;
+  max-width: 400px;
+  color:black;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.options .button:hover,
+.options .button.selected {
+	background-color: #a0f8a3;
+}
+
+.init .button:hover {
+  background-color: #5ed08e;
+}
+
+.player .button:hover {
+  background-color: #e2870c;
+}
+
+.spock .button:hover,
+.spock .button.selected,
+.default .button:hover,
+.default .button.selected {
+	background-color: #b48dda;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+	.buttonStrip {
+    flex-direction: row;
+    margin-top: 2em;
+	}
+	.button {
+		font-size: 1.6em;
+	}
+  .buttonStrip.init .button {
+    margin: 0em 0.5em 0em 0.5em;
+  }
+}

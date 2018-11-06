@@ -1,0 +1,108 @@
+* {
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.flex-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.bee .type, .bee .health {
+  display: table;
+  clear: both;
+  float: left;
+}
+
+.type {
+  font-size: 14px;
+}
+
+.bee {
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  border: 5px solid #33aa33;
+  padding: 10px;
+
+  -webkit-transition: border 0.25s ease-in; /* Saf3.2+, Chrome */
+     -moz-transition: border 0.25s ease-in; /* FF3.7+ */
+       -o-transition: border 0.25s ease-in; /* Opera 10.5 */
+          transition: border 0.25s ease-in;
+}
+
+.bee:before {
+  content: ' ';
+  display: block;
+  background-position: 50% 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url(../image/bee.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.bee.hit {
+  border: 5px solid red;
+}
+
+.dead {
+  border: 5px solid red;
+}
+
+.queen {
+  height: 80px;
+  width: 80px;
+  background-size: 80px;
+}
+
+.worker {
+  height: 70px;
+  width: 70px;
+  background-size: 70px;
+}
+
+.drone {
+  height: 60px;
+  width: 60px;
+  background-size: 60px;
+}
+
+.killbee {
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+#message {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #676767;
+  border-radius: 5px;
+  background-color: #ffffdd;
+  color: black;
+}
+
+#message.warning {
+  background-color: red;
+  color: white;
+}

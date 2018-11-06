@@ -1,0 +1,5 @@
+<ul>
+	<li id="filter" data-name="Filter" class="sidebarIcon"><span>Filter</span></li>
+	<li id="tag" data-name="Tags" class="sidebarIcon"><span>Tag</span></li>
+	<li id="category" data-name="Category" class="sidebarIcon"><span>Category</span></li>
+</ul>

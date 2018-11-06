@@ -1,0 +1,16 @@
+.inputarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.1em;
+  order: 2;
+  align-items: center;
+}
+
+@media only screen
+and (min-width : 600px) {
+  .inputarea {
+    margin-top: 2em;    
+    order: 2;
+  }
+}

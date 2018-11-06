@@ -1,0 +1,84 @@
+.NoteForm form {
+  margin: 0.5em 0 0.5em 0;
+  border: 1px solid #676767;
+  display: flex;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+}
+
+.NoteForm textarea {
+  font-size: 1em;
+  padding: 0.5em;
+  font-family: 'Maitree', serif;
+  resize: none;
+}
+
+.NoteForm input[type="title"] {
+  font-family: 'Maitree', serif;
+  font-size: 1em;
+  padding: 0.5em;
+  border-bottom: 1px solid #565656;
+}
+
+.NoteForm .BottomBar {
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #565656;
+  background-color: #efefef;
+}
+
+.BottomBar .Markdown {
+  display: flex;
+  flex-direction: row;
+}
+
+.BottomBar .Markdown label {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.BottomBar .Submit input[type="submit"] {
+  font-size: 1em;
+  font-family: 'Maitree', serif;
+  margin-right: 0.5em;
+  padding: 0 0.2em 0 0.2em;
+  background-color: #efefef;
+}
+
+.BottomBar .Submit {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;  
+}
+
+.BottomBar .Submit input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #7AA87A;
+}
+
+.BottomBar .ColorStrip {
+  padding: 0.2em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Ipads ----------- */
+@media only screen
+and (min-width : 600px) {
+  .NoteForm form {
+    width: 75%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1000px) {
+  .NoteForm form {
+    width: 75%;
+  }
+}

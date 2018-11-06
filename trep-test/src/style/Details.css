@@ -1,0 +1,28 @@
+.Details {
+  display: flex;
+  flex-direction: column;
+}
+
+.Details .Text {
+  padding: 1em;
+  margin-left: 1em;
+  flex-grow: 1;
+}
+
+.Details .Name {
+  font-size: 1.1em;
+}
+
+.Details .Location {
+  font-size: 1.1em;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Details {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}

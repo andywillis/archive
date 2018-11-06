@@ -1,0 +1,28 @@
+.Costing {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1em 1em 1em;
+}
+
+.Costing .MinCost {
+  font-size: 2em;
+  color: #FA7823;
+  margin-left: 0.5em;
+}
+
+.Costing div:first-child {
+  margin-left: 1em;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Costing {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: right;
+    border-left: 1px solid #dfdfdf;
+    padding: 1em;
+  }
+}

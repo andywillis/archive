@@ -1,0 +1,328 @@
+@font-face{font-family:"FCZizouSlab";src:url(/client/fonts/fczizou/fczizou_slab-thin-webfont.eot) format("embedded-opentype"),url(/client/fonts/fczizou/fczizou_slab-thin-webfont.woff) format("woff"),url(/client/fonts/fczizou/fczizou_slab-thin-webfont.svg) format("svg"),url(/client/fonts/fczizou/fczizou_slab-thin-webfont.ttf) format("opentype");font-style:normal;font-weight:200;font-stretch:normal;}
+@font-face{font-family:"FCZizouSlab";src:url(/client/fonts/fczizou/fczizou_slab-light-webfont.eot) format("embedded-opentype"),url(/client/fonts/fczizou/fczizou_slab-light-webfont.woff) format("woff"),url(/client/fonts/fczizou/fczizou_slab-light-webfont.svg) format("svg"),url(/client/fonts/fczizou/fczizou_slab-light-webfont.ttf) format("opentype");font-style:normal;font-weight:300;font-stretch:normal;}
+@font-face{font-family:"FCZizouSlab";src:url(/client/fonts/fczizou/fczizou_slab-regular-webfont.eot) format("embedded-opentype"),url(/client/fonts/fczizou/fczizou_slab-regular-webfont.woff) format("woff"),url(/client/fonts/fczizou/fczizou_slab-regular-webfont.svg) format("svg"),url(/client/fonts/fczizou/fczizou_slab-regular-webfont.ttf) format("opentype");font-style:normal;font-weight:400;font-stretch:normal;}
+@font-face{font-family:"FCZizouSlab";src:url(/client/fonts/fczizou/fczizou_slab-medium-webfont.eot) format("embedded-opentype"),url(/client/fonts/fczizou/fczizou_slab-medium-webfont.woff) format("woff"),url(/client/fonts/fczizou/fczizou_slab-medium-webfont.svg) format("svg"),url(/client/fonts/fczizou/fczizou_slab-medium-webfont.ttf) format("opentype");font-style:normal;font-weight:500;font-stretch:normal;}
+@font-face{font-family:"FCZizouSlab";src:url(/client/fonts/fczizou/fczizou_slab-bold-webfont.eot) format("embedded-opentype"),url(/client/fonts/fczizou/fczizou_slab-bold-webfont.woff) format("woff"),url(/client/fonts/fczizou/fczizou_slab-bold-webfont.svg) format("svg"),url(/client/fonts/fczizou/fczizou_slab-bold-webfont.ttf) format("opentype");font-style:normal;font-weight:600;font-stretch:normal;}
+@font-face{font-family:'MuseoSans';src:url(/client/fonts/museosans/museosans-300-webfont.eot);src:url(/client/fonts/museosans/museosans-300-webfont.eot#iefix) format("embedded-opentype"),url(/client/fonts/museosans/museosans-300-webfont.woff) format("woff"),url(/client/fonts/museosans/museosans-300-webfont.ttf) format("truetype"),url(/client/fonts/museosans/museosans-300-webfont.svg#MuseoSans300) format("svg");font-weight:300;font-style:normal;}
+@font-face{font-family:'MuseoSans';src:url(/client/fonts/museosans/museosans-300_italic-webfont.eot);src:url(/client/fonts/museosans/museosans-300_italic-webfont.eot#iefix) format("embedded-opentype"),url(/client/fonts/museosans/museosans-300_italic-webfont.woff) format("woff"),url(/client/fonts/museosans/museosans-300_italic-webfont.ttf) format("truetype"),url(/client/fonts/museosans/museosans-300_italic-webfont.svg#MuseoSans300Italic) format("svg");font-weight:300;font-style:italic;}
+@font-face{font-family:'MuseoSans';src:url(/client/fonts/museosans/museosans-500-webfont.eot);src:url(/client/fonts/museosans/museosans-500-webfont.eot#iefix) format("embedded-opentype"),url(/client/fonts/museosans/museosans-500-webfont.woff) format("woff"),url(/client/fonts/museosans/museosans-500-webfont.ttf) format("truetype"),url(/client/fonts/museosans/museosans-500-webfont.svg#MuseoSans300) format("svg");font-weight:500;font-style:normal;}
+@font-face{font-family:'MuseoSans';src:url(/client/fonts/museosans/museosans-700-webfont.eot);src:url(/client/fonts/museosans/museosans-700-webfont.eot#iefix) format("embedded-opentype"),url(/client/fonts/museosans/museosans-700-webfont.woff) format("woff"),url(/client/fonts/museosans/museosans-700-webfont.ttf) format("truetype"),url(/client/fonts/museosans/museosans-700-webfont.svg#MuseoSans700) format("svg");font-weight:700;font-style:normal;}
+
+* {
+	top: auto;
+	left: auto;
+	position: static;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
+html, body {
+	overflow: hidden;
+/*	height: 100%; */
+	background-color: rgba(255,255,255,1);
+	text-transform: inherit;
+	font-family: 'MuseoSans', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 100;
+	letter-spacing: .015em;
+}
+
+div.noscript {
+	background-color: rgba(255, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+div#container {
+	position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width:100%;
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+	min-height:100%; /* real browsers */
+}
+
+h1, nav li, ul, nav, hgroup {
+	display: inline;
+}
+
+body header hgroup h1 {
+	margin: 0px 0px 0px 10px;
+}
+
+body header hgroup h1,
+body footer hgroup h1 {
+	font-family: 'FCZizouSlab', Arial, sans-serif;
+	font-size: 44px;
+	font-weight: 300;
+	line-height: 44px;
+	letter-spacing: .02em;
+	background: none;
+	color: rgba(142, 51, 50, 1);
+}
+
+h2 {
+	font-family: 'FCZizouSlab', Arial, sans-serif;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: .02em;
+	background: none;
+	color: rgba(142, 51, 50, 1);
+}
+
+.buttonRow {
+	margin-bottom: 30px
+}
+
+h3 {
+	font-family: 'FCZizouSlab', Arial, sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: .02em;
+	background: none;
+	color: rgba(142, 51, 50, 1);
+	margin: 10px 0px 10px 0px
+}
+
+.green {
+	color: green
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0px;
+	margin: 0px auto;
+	border-top: solid 1px rgba(0,0,0,0.3);
+	width: 100%;
+	padding-right: 15px;
+	background-color: rgba(255, 255, 255, 1);
+	color: rgba(142, 51, 50, 1);
+	-moz-box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+}
+
+footer p {
+	font-size: 10px;
+	text-align: right;
+}
+
+body header {
+	background-color: rgba(255, 255, 255, 1);
+	border-bottom: solid 1px rgba(0,0,0,0.3);
+	position: fixed;
+	top: 0;
+	left: 0px;
+	width: 100%;
+	margin: 0px auto;
+	-moz-box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+}
+
+body header nav {
+	margin-left: 30px;
+	list-style-type: none;
+}
+
+body header nav ul li {
+	font-family: 'FCZizouSlab', Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 24px;
+	letter-spacing: .02em;
+	color: rgba(142, 51, 50, 1);
+	margin: 0px 11px 0px 0px;
+	padding: 0px 10px 0px 10px;
+}
+
+body header a:visited,
+body header a:active,
+body header a:link,
+body header a:hover {
+	color: rgba(142, 51, 50, 1);
+}
+
+li.selected,
+nav ul li:hover {
+	background-color: rgba(230, 231, 252, 1);
+}
+
+nav ul li:hover {
+	cursor: pointer;
+}
+
+#content {
+	margin: 60px 40px 40px 40px;
+	color: rgba(255,255,255,0.8);
+}
+
+.fourohfour {
+	display: block;
+	margin: 200px 0px 0px 50px;
+	color: rgba(0, 0, 0, 1);
+	font-size: 100px
+}
+
+a.btn,
+a:visited {
+	color: rgba(0,0,0,1);
+	background-color: rgba(240,200,100,1)
+}
+
+.textpostbody a:link,
+.textpostbody a:active {
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(240,200,100,0.4);
+}
+
+.header a:link,
+.footer a:link,
+.header a:active,
+.footer a:active {
+	color: rgba(0, 0, 0, 1);
+	background: none;
+}
+
+.textpostbody a:hover {
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(210, 220, 240, 1)
+}
+
+#blog .history a:visited,
+#blog .history a:link,
+#blog .history a:active {
+	color: rgba(255,255,255,0.6);
+}
+
+#blog .history a:hover {
+	color:rgba(255,255,255,1);
+}
+
+/* FORM */
+
+#addPost {
+	color: rgba(0,0,0,1);
+}
+
+form {
+	color: rgba(0,0,0,1);
+  width: 850px;
+  padding: 10px 10px 10px 10px;
+}
+
+fieldset {
+  padding: 10px 10px 10px 10px;
+}
+
+form div {
+	color: rgba(0,0,0,1);
+  clear: left;
+  display: block;
+  width: 800px;
+  margin: 5px 0px 5px 0px;
+  padding: 1px 3px;
+}
+
+label {
+	color: rgba(0,0,0,1);
+  vertical-align:top;
+  display: block;
+  float: left;
+  width: 100px;
+  padding: 3px 5px;
+  margin: 0px 10px 5px 0px;
+  text-align: right;
+}
+
+textarea, input  {
+  vertical-align:top;
+  display: block;
+  float: left;
+  width: 600px;
+  padding: 3px 5px;
+  margin: 0px 0px 5px 0px;
+  border: 1px solid rgba(0,0,0,0.4);
+}
+
+select {
+  vertical-align:top;
+  padding: 3px 2px;
+  display: block;
+  float: left;
+  width: 610px;
+  margin: 0px 0px 5px 0px;
+  border: 1px solid rgba(0,0,0,0.4);
+}
+
+textarea {
+  height: 200px;
+}
+
+.inputSubmit:hover {
+	cursor: pointer;
+	background-color: rgba(100, 255, 100, 0.7);
+}
+
+.inputSubmit {
+  width: 612px;
+  background-color: rgba(100, 255, 100, 0.4);
+}
+
+del {
+	text-decoration: line-through;
+	color: rgba(255,255,255,0.4);
+}
+
+.bold {
+	font-weight: 700;
+}
+
+#contact h2,
+#wip h2,
+#api h2 {
+		margin: 90px 30px 30px 30px;
+}
+
+#contact h3,
+#wip h3,
+#api h3 {
+		margin: 10px 0px 10px 45px;
+}
+
+#wip #content p,
+#contact #content p,
+#api #content p {
+	margin: 20px 0px 20px 45px;
+}
+
+#contact #content ul li,
+#contact #content ol li,
+#wip #content ul li,
+#wip #content ol li,
+#api #content ul li,
+#api #content ol li {
+	margin: 0px 0px 0px 90px;
+}
+
+#api #content a:visited,
+#api #content a:active,
+#api #content a:link {
+	color: rgba(255,255,255,0.8);
+	background-color: rgba(40,40,50,1);
+}
+
+#api #content a:hover {
+	color: rgba(0,0,0,1);
+	background-color: rgba(200,255,255,0.5);
+}
+
+strong {
+	font-weight:700;
+	color: rgba(255,200,200,1);
+}

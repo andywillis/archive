@@ -1,0 +1,18 @@
+.App {
+  text-align: left;
+  font-family: 'Courier Prime', sans-serif;
+  font-size: 14px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 40px;
+  line-height: 0px;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.App.App-header, h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}

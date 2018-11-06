@@ -1,0 +1,42 @@
+.Arrow {
+  height: 48px;
+  width: 48px;
+  background-size: 48px 48px;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.Arrow.enabled {
+  opacity: 1;
+}
+
+.Arrow:not(:last-child) {
+  margin-right: 10px;
+}
+
+.Arrow.enabled:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Arrow {
+    height: 62px;
+    width: 62px;
+    background-size: 62px;
+  }
+}
+
+.Arrow[type="arrowleft"] {
+  background-image: url("../../images/1495294636_arrow_left.svg");
+}
+
+.Arrow[type="arrowright"] {
+  background-image: url("../../images/1495294629_arrow_right.svg");
+}
+
+.Arrow[type="home"] {
+  background-image: url("../../images/1498580984_Home.svg");
+}

@@ -1,0 +1,8 @@
+.NoteList .Notes {
+  margin: 2em 0em 1em 0em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  background-color: #efefef;
+  padding: 1em;
+}

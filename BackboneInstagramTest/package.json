@@ -1,0 +1,26 @@
+{
+  "name": "BackboneInstagramTest",
+  "version": "2.0.0",
+  "description": "A test of Instagram's API using Backbone to build an editable gallery of images",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andywillis/BackboneInstagramTest.git"
+  },
+  "author": "Andy Willis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andywillis/BackboneInstagramTest/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "connect": "^3.4.0",
+    "ejs": "^2.3.3",
+    "express": "^4.13.1",
+    "instagram-node": "^0.5.7"
+  }
+}

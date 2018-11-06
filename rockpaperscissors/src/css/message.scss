@@ -1,0 +1,27 @@
+.msg {
+  padding: 1em;
+	margin-top: 0.5em;
+	text-align: center;
+	font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.msg.win {
+  background-color: #bde1b7;
+}
+
+.msg.lose {
+  background-color: #eeb8aa;
+}
+
+.msg.draw {
+  background-color: #b0c7e8;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+	.msg {
+		font-size: 2em;
+	}
+}

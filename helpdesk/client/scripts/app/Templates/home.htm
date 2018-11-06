@@ -1,0 +1,4 @@
+<% _.each(data, function (item, i) { %>
+<% item.text = item.text.replace(/\n/g,'<br>') %>
+  <p><%= item.text %></p>
+<% }) %>

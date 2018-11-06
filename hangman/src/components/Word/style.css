@@ -1,0 +1,17 @@
+.word {
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  opacity: 1;
+}
+
+.slot {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+.complete {
+  color: rgb(33, 150, 33);
+}

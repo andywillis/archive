@@ -1,0 +1,89 @@
+.stocklist {
+  width: 95%;
+}
+
+.stocklist, .level, .location {
+  margin-left: 1em;
+}
+
+.stockTable table {
+  width: 95%;
+  border-collapse: collapse;
+}
+
+@media only screen
+and (min-width : 600px) {
+  .stocklist table {
+    width: 75%;
+  }
+}
+
+.stockTable table, .stockTable thead {
+  border: 1px solid #bfbfbf;
+}
+
+.stockTable thead {
+  background-color: #efefef;
+}
+
+.stockTable td, .stockTable th {
+  padding: 0.5em;
+  text-align: left;
+}
+
+.stockTable td {
+  border-bottom: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+}
+
+.stockTable tr:last-child td {
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.stockTable tr td:last-child  {
+  border-right: 1px solid #bfbfbf;
+}
+
+.stockTable td.product {
+  width: 50%;
+}
+
+.stockTable td.qty {
+  width: 10%;
+}
+
+.stockTable td.replenishment {
+  width: 40%;
+}
+
+.stocklist h1 {
+  font-size: 2em;
+}
+
+.stocklist .showstock {
+  font-size: 1.2em;
+}
+
+.level h1 {
+  text-decoration-line: underline;
+  font-size: 1.6em;
+}
+
+.location h1 {
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.location .warning {
+  color: red;
+}
+
+.location {
+  padding-bottom: 0.5em;
+}
+
+.level {
+  padding-bottom: 2em;
+  border-bottom: 1px dotted black;
+}

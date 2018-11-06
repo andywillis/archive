@@ -1,0 +1,11 @@
+.Keyword {
+  font-family: 'Arvo', serif;
+  font-size: 1em;
+  color: black;
+  display: inline-block;
+  margin-left: 0.5em;
+  padding: 0 0.5em 0 0.5em;
+  background-color: #eeeeff;
+  border: 2px solid #bcbcbc;
+  border-radius: 5px;
+}

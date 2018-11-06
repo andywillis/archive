@@ -1,0 +1,13 @@
+<header class="main">
+	<hgroup>
+		<h1><a href="/home">Deviation</a></h1>
+		<nav>
+			<ul>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/radio?station=classical techno dubby">Radio</a></li>
+				<li><a href="/spotmaps">Spotmaps</a></li>
+				<li><a href="/api">Api</a></li>
+			</ul>
+		</nav>
+	</hgroup>
+</header>

@@ -1,0 +1,38 @@
+.SortBar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+.SortLabel {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.SortBarType.active {
+  background-color: #dfdfdf;
+}
+
+.SortBarType, .SortLabel {
+  margin-right: 0.5em;
+  padding: 0.2em;
+  text-transform: uppercase;
+}
+
+.SortBarType:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .SortBar {
+    flex-direction: row;
+    margin-bottom: 1em;
+    margin-left: 0em;
+  }
+  .SortBarType:not(:first-child) {
+    margin-left: 0.5em;
+  }
+}

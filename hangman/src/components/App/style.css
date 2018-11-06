@@ -1,0 +1,14 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%;
+}
+
+@media only screen
+and (min-width : 600px) {
+  .board {
+    flex-direction: row;
+  }
+}

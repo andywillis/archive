@@ -1,0 +1,23 @@
+{
+  "name": "blackjack",
+  "version": "1.0.0",
+  "description": "v.2.0.0 uses ES6 modules in the browser in a limited way.",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=production&& node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andywillis/blackjack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andywillis/blackjack/issues"
+  },
+  "homepage": "https://github.com/andywillis/blackjack#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

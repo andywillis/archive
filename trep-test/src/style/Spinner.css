@@ -1,0 +1,7 @@
+.Spinner {
+  background-image: url("../images/spinner.svg");
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}

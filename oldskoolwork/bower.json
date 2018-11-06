@@ -1,0 +1,22 @@
+{
+  "name": "VendaLocalDev",
+  "version": "0.0.0",
+  "authors": [
+    "Andy Willlis <github@awillis.fastmail.fm>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/lib/js",
+    "test",
+    "tests",
+    "src/lib/js"
+  ],
+  "devDependencies": {
+    "jquery": "1.11.1",
+    "lodash": "~2.4.1"
+  }
+}

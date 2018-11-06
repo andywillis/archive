@@ -1,0 +1,42 @@
+.Gridbox {
+  text-align: center;
+  margin: 1em 0 1em 0;
+}
+
+.Gridbox.twoCols {
+  flex: 1 0 50%;
+}
+
+.Gridbox.threeCols {
+  flex: 1 0 33%;
+}
+
+.Gridbox.threeCols img {
+  width: 100px;
+}
+
+.Gridbox.twoCols img {
+  width: 180px;
+}
+
+.Gridbox a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.Gridbox .designer {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: .4em;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Gridbox.twoCols img {
+    width: 300px;
+  }
+  .Gridbox.threeCols img {
+    width: 200px;
+  }
+}

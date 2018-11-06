@@ -1,0 +1,29 @@
+.Para {
+  font-size: 1.4em;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+}
+
+.Para img {
+  width: 80%;
+  display: flex;
+  border: 2px solid #ababab;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Para a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #aa0000;
+}
+
+.Para a:hover {
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+img+img {
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;  
+}

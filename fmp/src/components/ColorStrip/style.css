@@ -1,0 +1,64 @@
+.ColorStrip .label {
+  display: inline-flex;
+  margin-right: 1em;
+}
+
+.ColorItem {
+  display: inline-block;
+  line-height: 0em;
+  width: 20px;
+  margin-right: 0.4em;
+}
+
+.ColorItem input[type=radio] ~ label.blue:after {
+  background: #7C9CDC;
+}
+
+.ColorItem input[type=radio] ~ label.green:after {
+  background: #A1DF9D;
+}
+
+.ColorItem input[type=radio] ~ label.red:after {
+  background: #BD8E8E;
+}
+
+.ColorItem input[type=radio]:checked ~ label:after {
+  border: 2px solid black;
+}
+
+.ColorItem input[type=radio] {
+  display: none;
+}
+
+.ColorItem input[type=radio]:first-child + label {
+  padding-right: 0;
+}
+
+.ColorItem:hover input[type=radio]:checked ~ label:after {
+  border: 2px solid black;
+}
+
+.ColorItem label:after {
+  border: 2px solid #efefef;
+}
+
+.ColorItem label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.ColorItem label:after {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+  float: right;
+  transition: all 0.25s;
+/*  background: green;*/
+}
+
+.ColorItem label:hover:after,
+.ColorItem label:hover ~ label:after {
+  border: 2px solid black;
+}

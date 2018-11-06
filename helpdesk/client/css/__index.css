@@ -1,0 +1,125 @@
+/* GENERAL */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic,800italic);
+
+* {font-size: 62.5%; color: rgba(0,0,0,1); font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; text-decoration: none; text-transform: inherit; position: relative;}
+
+/* COLOR */
+
+.p1 {background-color: rgba(255,0,0,0.2)}
+.p2 {background-color: rgba(255,150,0,0.2)}
+.p3 {background-color: rgba(255,255,0,0.2)}
+tr:hover .p1 {background-color: rgba(255,0,0,0.4)}
+tr:hover .p2 {background-color: rgba(255,150,0,0.4)}
+tr:hover .p3 {background-color: rgba(255,255,0,0.40)}
+body {background-color: rgba(255,255,255,1)}
+#footer {background-color: rgba(160,160,170,1)}
+nav li.active {background-color: rgba(240,220,155,1)}
+th {background-color: rgba(230,220,255,1)}
+nav li.inactive:hover {background-color: rgba(235,230,200,1)}
+h1 {color: rgba(240,240,240,1)}
+
+th:hover,
+.reports tbody tr:hover,
+.calls tbody tr:hover
+{background-color: rgba(170,170,210,0.4)}
+
+table,
+form,
+nav li.inactive
+{background-color: rgba(240,240,255,1)}
+
+/* BORDER */
+
+nav li {border-right: solid 1px rgba(160,160,170,1)}
+table td {border: solid 1px rgba(160,160,170,1)}
+table {border-collapse: collapse;}
+
+/* DISPLAY */
+
+nav li {float: left}
+ul {list-style: none}
+
+nav:hover,
+tr
+{cursor: pointer}
+
+#header,
+#main
+{overflow: hidden}
+
+#header,
+nav ul li
+{display: block}
+
+/* FONT */
+
+form label,
+form input,
+nav li
+{font-size: 0.8em}
+
+h1 {font-size: 1.5em}
+#footer p {font-size: 0.8em}
+
+table th,
+table td
+{font-size: 0.8rem}
+
+#footer p {text-align: right}
+table th {text-align: left}
+table th.priority {text-align: center}
+.calls td {vertical-align: top}
+
+h1,
+th,
+td
+{font-weight: 500}
+
+
+/* PADDING */
+
+nav li {padding: 5px 20px 5px 20px}
+
+table td,
+table th
+{padding: 2px 12px 2px 12px}
+
+/* POSITION */
+
+#footer {height: 20px}
+#header {top: 0px}
+#footer {bottom: 0px}
+#main {top: 45px}
+#main {bottom: 20px}
+
+form,
+table.calls
+{width: 800px}
+
+html,
+body
+{height: 100%}
+
+#header,
+#main,
+#footer
+{position: absolute}
+
+nav,
+nav li,
+#header,
+{height: 33px}
+
+#header,
+#main,
+#footer
+{right: 0px}
+
+#header,
+#main,
+#footer
+{left: 0px}
+
+td.hundred
+{width:120px}

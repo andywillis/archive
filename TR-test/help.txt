@@ -1,0 +1,6 @@
+Company {
+  name:
+  assets: { current: products, fixed: office }
+  type: private || bankrupt || public-floated
+  products: []
+}

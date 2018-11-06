@@ -1,0 +1,47 @@
+<form name="add" id="addSpotmap" action="/add" method="post" enctype="multipart/form-data">
+	<fieldset xmlns="http://www.w3.org/1999/xhtml">
+		<legend>Add new spotmap</legend>
+		<div class="required">
+			<label for="date">Date</label>
+			<span id="date">#{currentDate}</span>
+		</div>
+		<div class="required">
+			<label for="title">Title</label>
+			<input name="title" type="text" id="title" size="90" required />
+		</div>
+		<div class="required">
+			<label for="rgba">RGBA data</label>
+			<textarea name="rgba" id="rgba"></textarea>
+		</div>
+		<div class="required">
+			<label for="title">Director</label>
+			<input name="director" type="text" id="director" size="90" required />
+		</div>
+		<div class="required">
+			<label for="title">Writer</label>
+			<input name="writer" type="text" id="writer" size="90" required />
+		</div>
+		<div class="required">
+			<label for="title">Year</label>
+			<input name="year" type="text" id="year" size="4" required />
+		</div>
+		<div class="required">
+			<label for="title">Category</label>
+			<select name="category" type="select" id="category" required >
+				#{options}
+			</select>
+		</div>
+		<div class="required">
+			<label for="tags">Tags</label>
+			<input name="tags" type="text" id="tags" size="90" required placeholder="Comma delimited, please."/>
+		</div>
+		<div class="required">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" size="25" required>
+		</div>
+		<div class="required">
+			<label for="submit"></label>
+			<input class="inputSubmit" type="button" id="submit" required value="SUBMIT" />
+		</div>
+	</fieldset>
+</form>

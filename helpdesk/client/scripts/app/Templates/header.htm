@@ -1,0 +1,7 @@
+<nav id="menu" role="navigation">
+  <ul class="navlist" id="nav">
+  <% _.each(results, function (item, i) { %>
+     <li id="<%= item.id %>" class="<%= item.class %> navabout" data-menu-button="<%= item.cid %>" name="<%= item.name %>" href=""><%= item.label %></li>
+  <% }); %>
+  </ul>
+</nav>

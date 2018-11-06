@@ -1,0 +1,64 @@
+.Note {
+  font-size: 1em;
+  line-height: 1.2em;
+  background-color: #ffffff;
+  border: 1px solid #ababab;
+  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.5);
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.4em;
+}
+
+.Note .Text,
+.Modal .Text {
+  white-space: pre-wrap;
+}
+
+.Note.blue {
+  background: #93A8D1;
+}
+
+.Note.green {
+  background: #B7D6B5;
+}
+
+.Note.red {
+  background: #CBACAC;
+}
+
+.Note .Text p:first-of-type {
+  margin-top: 1em;
+}
+
+.Note .Title,
+.Modal .Title {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.Modal .Title {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+.Note:hover {
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px 0px rgba(188,188,188,1);
+  cursor: pointer;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Note {
+    width: 44%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1000px) {
+  .Note {
+    width: 29.35%;
+  }
+}

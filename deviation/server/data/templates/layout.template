@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>#{name}</title>
+		<link rel="stylesheet" href="/client/css/deviation.css">
+		<link rel="stylesheet" href="/client/css/radio.css">
+		<link rel="stylesheet" href="/client/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+		<link rel="icon" type="image/ico" href="/client/images/favicon.ico">
+		<link rel="alternate" href="/client/rss/deviation.rss" type="application/rss+xml" title="rss" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="/client/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<script src="/client/js/keymaster.min.js"></script>
+		<script src="/client/js/index.js"></script>
+		<script src="/client/js/ga.js"></script>
+	</head>
+	<body id="{page}">
+		<noscript>
+			<div class="noscript">
+				This site requires Javascript.
+			</div>
+		</noscript>
+		#{header}
+		<div class="wrapper">
+			#{content}
+			<div class="push"></div>
+		</div>
+		#{footer}
+	</body>
+</html>

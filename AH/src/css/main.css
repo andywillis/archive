@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(230, 230, 230) !important;
+}
+
+.container.main {
+  margin-top: 30px;
+}
+
+.ah {
+  padding: 5px;
+}
+
+.round {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 5px;
+  background-color: rgb(240, 240, 240) !important;
+}
+
+pre, code {
+  border: none !important;
+  background-color: none;
+}
+
+.selector {
+  width: 100%;
+}

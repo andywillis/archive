@@ -1,0 +1,28 @@
+.letter {
+  display: inline-flex;
+  margin: 0.1em;
+  padding: 0.5em;
+  background-color: #efefef;
+  border: 1px solid #676767;
+  border-radius: 2px;
+}
+
+.clicked.found {
+  background-color: #a9e6c2;  
+}
+
+.clicked.notfound {
+  background-color: #e6b7a9;
+}
+
+.letter.unclicked:hover {
+  cursor: pointer;
+  background-color: rgb(176, 176, 248)
+}
+
+@media only screen
+and (min-width : 600px) {
+  body {
+    font-size: 1.3em;
+  }
+}

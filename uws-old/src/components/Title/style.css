@@ -1,0 +1,17 @@
+.Title {
+  margin-bottom: 0.3em;
+  font-size: 2.2em;
+  color: #154380;
+}
+
+.Title[type="list"]:hover {
+  background-color: #efefff;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Title {
+    font-size: 2.6em;
+  }
+}

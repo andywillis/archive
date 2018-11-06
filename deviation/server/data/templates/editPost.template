@@ -1,0 +1,39 @@
+<form name="edit" id="editPost" action="/edit" method="post" enctype="multipart/form-data">
+	<fieldset xmlns="http://www.w3.org/1999/xhtml">
+		<legend>Edit post</legend>
+		<div class="required">
+			<label for="date">Date</label>
+			<span id="date">#{currentDate}</span>
+		</div>
+		<div class="required">
+			<label for="id">Id</label>
+			<input name="id" type="text" id="id" value="#{id}" size="90" required disabled/>
+		</div>
+		<div class="required">
+			<label for="title">Title</label>
+			<input name="title" type="text" id="title" value="#{title}" size="90" required />
+		</div>
+		<div class="required">
+			<label for="post">Post</label>
+			<textarea name="post" id="post">#{body}</textarea>
+		</div>
+		<div class="required">
+			<label for="title">Category</label>
+			<select name="category" type="select" id="category" required >
+				#{options}
+			</select>
+		</div>
+		<div class="required">
+			<label for="tags">Tags</label>
+			<input name="tags" type="text" id="tags" value="#{tags}" size="90" required placeholder="Comma delimited, please."/>
+		</div>
+		<div class="required">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" size="25" required>
+		</div>
+		<div class="required">
+			<label for="submit"></label>
+			<input class="inputSubmit" type="button" id="submit" required value="SUBMIT" />
+		</div>
+	</fieldset>
+</form>

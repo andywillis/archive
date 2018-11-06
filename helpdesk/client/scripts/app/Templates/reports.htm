@@ -1,0 +1,14 @@
+<table id="reports" class="datatable" data-role="list-view" data-inset="true">
+  <tr>
+    <th class="reportid">ReportID</th>
+    <th class="service">Service</th>
+    <th class="summary">Summary</th>
+  </tr>
+  <% _.each(data, function (item, i) { %>
+    <tr>
+      <td><%= item.reportid %></td>
+      <td><%= item.service %></td>
+      <td><%= item.summary %></td>
+    </tr>
+  <% }); %>
+</table>

@@ -1,0 +1,77 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table {
+  min-width: 400px;
+  background-color: #ababab;
+  border-collapse: collapse;
+  border: 11px solid #dfdfdf;
+}
+
+tr {
+  background-color: white;
+}
+
+td {
+  padding: 5px;
+  border: 1px solid #676767;
+}
+
+button {
+	background-color: #efefef;
+  padding: 5px 15px 2px 15px;
+  border: 0px;
+}
+
+nav button:first-child {
+	border-right: 1px solid black;
+}
+
+button.active {
+  background-color: #dfdfdf;
+}
+
+button:not(.active) {
+  cursor: pointer;
+}
+
+/* http://tobiasahlin.com/spinkit/# */
+.loader {
+  width: 15px;
+  height: 15px;
+  display: none;
+  position: relative;
+}
+
+.loader.active {
+  display: inline-block;
+}
+
+.bounce {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}

@@ -1,0 +1,8 @@
+jspm_packages
+node_modules
+client/node_modules
+.tmp
+project.sublime-project
+project.sublime-workspace
+npm-debug.log
+test/reports

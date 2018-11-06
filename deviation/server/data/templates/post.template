@@ -1,0 +1,19 @@
+<a class="postAnchor" name="#{docid}"></a>
+<div class="post">
+	<div class="header">
+		<h2><a href="/blog/view/#{docid}/#{urlTitle}">#{title}</a></h2>
+		<span class="date">#{date}</span>
+	</div>
+	<div class="textpostbody">
+		#{body}
+		<div id="markup">#{markup}</div>
+	</div>
+	<div class="footer">
+		<div class="category">
+			<span><a href="/blog/category/#{category}">#{category}</a></span>
+		</div>
+		<div class="taglist">
+			#{tags}
+		</div>
+	</div>
+</div>

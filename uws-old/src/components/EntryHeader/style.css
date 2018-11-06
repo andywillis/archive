@@ -1,0 +1,10 @@
+.EntryHeader {
+  font-family: 'Arvo', serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.EntryHeader .inline {
+  display: flex;
+  flex-direction: row;
+}

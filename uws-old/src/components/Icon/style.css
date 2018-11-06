@@ -1,0 +1,67 @@
+.Icon {
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+  background-color: transparent;
+}
+
+.Icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.Icon:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Icon {
+    height: 48px;
+    width: 48px;
+    background-size: 48px;
+  }
+}
+
+.Icon[type="avatar"] {
+  background-image: url("../../images/avatar2.jpg");
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Icon[type="avatar"]:hover:after {
+    content: 'Home';
+    font-family: 'Arvo', serif;
+    font-size: 1.4em;
+    position: relative;
+    left: 2.4em;
+    top: 0.5em;
+    width: 300px;
+    height: 1.25rem;
+    background-color: #436187;
+    color: white;
+    padding: 0.51em;
+  }
+}
+
+.Icon[type="mail"] {
+  background-image: url("../../images/1495142137_mail-square-social-media.svg");
+}
+
+.Icon[type="flickr"] {
+  background-image: url("../../images/1495142190_flickr-square-social-media.svg");
+}
+
+.Icon[type="twitter"] {
+  background-image: url("../../images/1495142142_twitter-square-social-media.svg");
+}
+
+.Icon[type="arrowleft"] {
+  background-image: url("../../images/1495294636_arrow_left.svg");
+}
+
+.Icon[type="arrowright"] {
+  background-image: url("../../images/1495294629_arrow_right.svg");
+}

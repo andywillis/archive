@@ -1,0 +1,23 @@
+.Tag {
+  font-family: 'Arvo', serif;
+  font-size: 1em;
+  display: inline-block;
+  margin: 0.3em 0.4em 0.3em 0.4em;
+  background-color: #d6dce4;
+  padding: 0.3em 0.9em 0.3em 0.9em;
+  border: 1px solid #bcbcbc;
+}
+
+.Tag:hover {
+  cursor: pointer;
+  background-color: #9CB0C9;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Tag {
+    font-family: 'Arvo', serif;
+    font-size: 1.2em;
+  }
+}

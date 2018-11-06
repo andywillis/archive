@@ -1,0 +1,14 @@
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";function qs(e){return document.querySelector(e)}function qsa(e){return document.querySelectorAll(e)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.qs=qs,exports.qsa=qsa;
+},{}],2:[function(require,module,exports){
+"use strict";function formatJSON(r,t){return JSON.stringify(r,null,t)}function formatXML(r){return r.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}Object.defineProperty(exports,"__esModule",{value:!0}),exports.formatJSON=formatJSON,exports.formatXML=formatXML;
+},{}],3:[function(require,module,exports){
+"use strict";function _interopRequireDefault(e){return e&&e.__esModule?e:{"default":e}}function renderCode(e,t){var r=void 0;"json"===t&&(r=(0,_interface.codeblock)((0,_formatData.formatJSON)(JSON.parse(e.response),2))),"xml"===t&&(r=(0,_interface.codeblock)((0,_formatData.formatXML)(e.response)));var n=(0,_dom.qs)(".response");n.innerHTML=renderHeader(e,t)+r,hljs.highlightBlock(n)}function renderHeader(e,t){return[["HTTP",e.status,"OK"].join(" "),["Content-Type:","application/",t].join(" ")].join("<br/>")}function renderPath(e){(0,_dom.qs)(".url").innerHTML="GET "+e}function getData(e){e=e||"json";var t="data/"+e;(0,_request2["default"])(t,function(r){renderPath(t),renderCode(r,e)})}function init(){(0,_dom.qs)(".selector").addEventListener("change",function(){var e=this.options[this.selectedIndex].value;getData(e)}),getData()}var _request=require("./request"),_request2=_interopRequireDefault(_request),_interface=require("./interface"),_dom=require("./dom"),_formatData=require("./formatData");document.addEventListener("DOMContentLoaded",init);
+},{"./dom":1,"./formatData":2,"./interface":4,"./request":5}],4:[function(require,module,exports){
+"use strict";function codeblock(e){return"<pre><code>#{data}</code></pre>".replace("#{data}",e)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.codeblock=codeblock;
+},{}],5:[function(require,module,exports){
+"use strict";function request(e,t){var r=new XMLHttpRequest;if(r){var s="GET";r.open(s,e,!0),r.setRequestHeader("User-Agent","XMLHTTP/1.0"),r.onreadystatechange=function(){4===r.readyState&&t(200===r.status?r:new Error("Rejected request"))},r.send()}}Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]=request;
+},{}]},{},[3])
+
+
+//# sourceMappingURL=bundle.map

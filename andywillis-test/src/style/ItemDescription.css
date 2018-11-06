@@ -1,0 +1,27 @@
+.ItemDescription {
+  flex: 0 1 auto;
+  order: 1;
+  margin-bottom: 2em;
+}
+
+.ItemDescription .designer {
+  font-size: 2em;
+}
+
+.ItemDescription .itemName {
+  font-size: 1em;
+}
+
+.ItemDescription .price .wasPrice {
+  color: red;
+  text-decoration: line-through;
+  margin-left: 2em;
+}
+
+@media only screen
+and (min-width : 600px) {
+  .ItemDescription {
+    order: 2;
+    margin-bottom: 0em;
+  }
+}

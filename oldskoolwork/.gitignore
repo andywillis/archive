@@ -1,0 +1,6 @@
+.sftprc
+node_modules
+.tmp
+.sublime-project
+.sublime-workspace
+src/lib/js

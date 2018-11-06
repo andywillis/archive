@@ -1,0 +1,37 @@
+.ColIcon {
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+  background-color: transparent;
+}
+
+.ColIcon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.ColIcon.active {
+  background-color: #dfdfdf;
+}
+
+.ColIcon:hover {
+  cursor: pointer;
+  background-color: #dfdfdf;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .ColIcon {
+    height: 48px;
+    width: 48px;
+    background-size: 48px;
+  }
+}
+
+.ColIcon[type="twoCols"] {
+  background-image: url("../images/mf-icn-twoCols.svg");
+}
+
+.ColIcon[type="threeCols"] {
+  background-image: url("../images/mf-icn-threeCols.svg");
+}

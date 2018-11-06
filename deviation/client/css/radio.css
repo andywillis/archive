@@ -1,0 +1,173 @@
+#radio #content div.main {
+	margin-top: 10px;
+}
+
+#radio #content ul {
+	list-style: none;
+	font-size: 15px;
+}
+
+#radio #content ul.radio li:first-child {
+	display: inline;
+	float:left;
+	margin-bottom: 10px;
+	padding: 0px 30px 30px 0px;
+	font-size: 80px;
+	font-weight: 700;
+	color: rgba(230,255,220,0.4);
+}
+
+#radio #content ul.radio li.track {
+	display: inline;
+	margin: 0px 20px 0px 0px;
+	line-height: 20px;
+}
+
+#radio #content ul.radio li.track:hover {
+	color: rgba(255,255,255,1);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.2);
+	cursor: pointer;
+}
+
+#radio #content ul.radio li.active {
+	border-radius: 5px;
+	border: solid 1px rgba(255,255,255,1);
+	background-color: rgba(255,255,255,0.2);
+}
+
+#radio #content ul.radio li.track {
+	color: rgba(255,255,255,0.6);
+}
+
+#radioWrapper {
+	display: block;	
+}
+
+#svgWrapper {
+	width: 820px;
+	margin: 0 auto;
+	margin-top: 75px;
+}
+
+#svg {
+	margin: 0 auto;
+	margin-top: 20px;
+/*	margin-top: 135px;
+*/
+}
+
+#radioInfo {
+	display: block;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#radioInfo input {
+	font-size: 9px;
+	color: rgba(255,255,255,1);
+	text-decoration:none;
+}
+
+#radioInfo a:hover {
+	color: rgba(255,255,255,1);
+}
+
+#radioInfo input#station {
+	border: 1px solid rgba(120,120,140,0.5);
+	width:250px;
+	float:left;
+	height: 10px;
+	background-color: rgba(30,30,40,1);
+	color: rgba(255,255,255,0.5);
+	font-size: 10px;
+	vertical-align: sub;
+	margin-bottom:0px;
+}
+
+rect.radioSquare {
+	stroke-width: 2px;
+	opacity: 0.4;
+	-moz-opacity: 0.4;
+	filter:alpha(opacity=4);
+}
+
+rect.radioSquare:hover,
+rect.radioSquare.active {
+	stroke: rgba(255,255,255,1);
+	stroke-width: 10px;
+	cursor:pointer;
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+}
+
+#trackInfoWrapper {
+	display: block;
+	width: 680px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#trackInfo {
+	margin: 20px 0px 0px 0px;
+}
+
+#trackInfo a {
+	font-size: 12px;
+	color: rgba(255,255,255,0.7);
+	text-decoration: none;
+	display: block;
+}
+
+#progressBar {
+/*	background-color: rgba(255,255,255,1);*/
+	margin: 0 auto;
+	width: 600px;
+	height: 30px;
+	display: inline;
+	float:left;
+}
+
+.progressImage {
+/*	margin-left: 2px;
+	margin-right: 2px;
+	*/
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=5);
+}
+
+.trackTitle, .timer {
+	font-weight:700;
+}
+
+.trackTitle:hover img.soundcloudIcon {
+	border: 1px solid rgba(255,255,255,1);
+}
+
+img.avatar,
+img.soundcloudIcon {
+	border: 1px solid rgba(30,30,40,1);
+	vertical-align: middle;
+	width: 60px;
+	height: 60px;
+	opacity: 0.8;
+	margin: 0px 10px 0px 0px;
+	float: left;
+}
+
+img.avatar:hover,
+img.soundcloudIcon:hover {
+	cursor: pointer;
+}
+
+img.waveform {
+	width: 600px;
+	height: 60px;
+	opacity: 0.5;
+	display: inline;
+	float:left;
+	border: none;	
+	margin: 10px 0px 0px 0px;
+}

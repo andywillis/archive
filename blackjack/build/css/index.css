@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  font-family: 'Arvo', serif;
+}
+
+html, body {
+  height: 100%;
+  font-size: 12px;
+  color: #222222;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  margin-left: 5%;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2em;
+  font-size: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid black;
+}
+
+.player, .dealer {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+button {
+  margin: 0.2em 0.5em 0.2em 0;
+  padding: 1em;
+  font-size: 1.2em;
+  border: 1px solid #bfbfbf;
+}
+
+button:hover {
+  background-color: #efefaa;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.card, .total {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  padding: 0.2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #454545;
+  padding: 0.3em 0.7em 0.3em 0.7em;
+  margin-right: 0.5em;
+  display: flex;
+  font-size: 1.4em;
+}
+
+.card .value {
+  margin-left: 0.3em;
+}
+
+.total {
+  font-size: 1.1em;
+}

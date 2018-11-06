@@ -1,0 +1,14 @@
+.Stars {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1em;
+}
+
+.Stars .Star {
+  display: flex;
+  height: 20px;
+  width: 20px;
+  background-size: 20px 20px;
+  background-color: transparent;
+  background-image: url("../images/if_star_285661.svg")
+}

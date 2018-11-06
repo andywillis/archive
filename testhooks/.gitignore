@@ -1,0 +1,26 @@
+# "standard" ignores
+/logs
+/.idea
+/.vagrant
+target/
+*.iml
+
+# "project-specific" ignores
+/executable/logs/
+classpath.jar
+dependencies.txt
+
+# webapp
+/webapp/test-report.html
+/webapp/node/
+/webapp/node_modules
+/webapp/yarn-error.log
+/webapp/coverage
+/webapp/build
+/webapp/.DS_Store
+/webapp/.env
+/webapp/npm-debug.log*
+/webapp/yarn-debug.log*
+/webapp/.iml
+/webapp/report/
+/webapp/MANIFEST.MF

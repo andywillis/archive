@@ -1,0 +1,121 @@
+/* GENERAL */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic,800italic);
+
+*
+  {font-size: 62.5%; color: rgba(0,0,0,1); font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; text-decoration: none; text-transform: inherit; position: relative;}
+
+/* BACKGROUND COLOR */
+
+body
+  {background-color: rgba(0,40,44,1)}
+
+nav ul li.appname
+  {background-color: rgba(0,0,0,1)}
+
+nav ul li.active
+  {background-color: rgba(80,80,80,1)}
+
+nav ul li.inactive
+  {background-color: rgba(240,240,255,1)}
+
+div#footer
+  {background-color: rgba(240,240,255,1)}
+
+nav ul li.inactive:hover
+  {background-color: rgba(235,230,200,1)}
+
+/* BORDER */
+
+/* CURSOR */
+
+nav ul li.inactive:hover
+  {cursor: pointer}
+
+/* DISPLAY */
+
+div#footer
+  {text-align: right}
+
+nav ul li
+  {text-align: center}
+
+div#header,
+div#header h1,
+div#footer,
+div#main,
+nav ul li
+  {display: block}
+
+/* FLOAT */
+
+nav,
+nav ul li
+  {float: left}
+
+/* FONT COLOR */
+
+h1,
+nav ul li.active,
+ul.list li
+  {color: rgba(255,255,255,1)}
+
+/* FONT SIZE */
+
+h1
+  {font-size: 3.0rem}
+
+p,
+nav ul li,
+ul.list li
+  {font-size: 1.4rem}
+
+/* FONT WEIGHT */
+
+nav ul li
+  {font-weight: 700}
+
+h1
+  {font-weight: 100}
+
+nav ul li
+  {text-transform: uppercase}
+
+/* LIST STYLE */
+
+ul
+  { list-style: none }
+
+/* PADDING */
+
+nav ul li
+  {padding: 5px 5px 5px 5px}
+
+div#footer
+  {padding: 0px 5px 0px 5px}
+
+/* MARGIN */
+
+/* WIDTH */
+
+div#header,
+nav
+  {width: 100%}
+
+nav ul li
+  {width: 10%}
+
+div#main,
+html,
+body
+  {height: 100%}
+
+div#main
+  {height: auto !important}
+
+div#main
+  {min-height: 100%}
+
+div#header,
+div#footer
+  {height: 30px}

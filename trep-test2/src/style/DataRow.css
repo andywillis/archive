@@ -1,0 +1,10 @@
+.DataRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+  border: 1px solid #dfdfdf;
+}
+
+.DataRow .Thumbnail img {
+  width: 150px;
+}

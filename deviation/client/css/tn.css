@@ -1,0 +1,138 @@
+#tweetnation div.menu {
+	margin: 0 auto;
+	padding: 10px;
+	border-bottom: solid 2px rgba(120, 120, 120, 0.5);
+}
+
+#tweetnation div.menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#tweetnation div.menu ul li {
+	display: inline;
+	margin-right: 10px;
+	background-color: rgba(40, 140, 80, 0.3);
+	padding: 5px 15px 5px 15px;
+}
+
+#tweetnation div.menu ul li:hover {
+	cursor: pointer;
+	background-color: rgba(40, 140, 80, 0.5);
+}
+
+#tweetnation div.menu ul li#reset {
+	display: inline;
+	margin-right: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 5px 15px 5px 15px;	
+}
+
+#tweetnation div.menu ul li#reset:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#tweetnation div.menu ul li#clearCount,
+#tweetnation div.menu ul li#clearFriends,
+#tweetnation div.menu ul li#clearTweets {
+	display: inline;
+	margin-right: 10px;
+	background-color: rgba(40, 140, 80, 0.3);
+	padding: 5px 15px 5px 15px;
+}
+
+#tweetnation div.menu ul li#clearCount:hover,
+#tweetnation div.menu ul li#clearFriends:hover,
+#tweetnation div.menu ul li#clearTweets:hover {
+	cursor: pointer;
+	background-color: rgba(40, 140, 80, 0.5);
+}
+
+#tweetnation div.menu ul li#myTwitter {
+	display: inline;
+	margin-right: 10px;
+	background-color: rgba(40, 40, 180, 0.3);
+	padding: 5px 15px 5px 15px;
+}
+
+#tweetnation div.menu ul li#myTwitter:hover {
+	cursor: pointer;
+	background-color: rgba(40, 40, 180, 0.5);
+}
+
+#tweetnation div#tSidebar {
+	position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width: 30.4%;
+	float: left;
+	height:100% !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+	min-height:100%; /* real browsers */
+	background-color: rgba(97, 60, 240);
+}
+
+#tweetnation div#charts img.friend {
+	cursor: pointer;
+}
+
+#tweetnation div#charts img.bar {
+	border: 1px solid rgba(120, 120, 120, 1)
+}
+
+#tweetnation div#tMain {
+	position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width: 69.5%;
+	float: right;
+	height:100% !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+	min-height:100%; /* real browsers */
+	background-color: rgba(255, 255, 255, 1);
+	overflow: hidden;
+}
+
+#tweetnation div#tweets,
+#tweetnation div#friends {
+	margin: 10px;
+	overflow: hidden;
+}
+
+#tweetnation div.tweet {
+	display: block;
+	margin-bottom: 6px;
+}
+
+#tweetnation .friend {
+	background-color: rgba(153, 178, 255, 0.4)
+}
+
+#tweetnation .tweet img {
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin-right: 12px
+}
+
+#tweetnation div.tweet div.text {
+	display: inline;
+	font-size: 14px;
+}
+
+#tweetnation div.tweet div.text a.at,
+#tweetnation div.tweet div.text a.hash {
+	color: rgba(120, 20, 20, 1);
+}
+
+#tweetnation div.tweet div.text a.hash:hover,
+#tweetnation div.tweet div.text a.at:hover {
+	background-color: rgba(120, 20, 20, 0.3);
+}
+
+#tweetnation div.tweet div.text a.link {
+	color: rgba(20, 120, 20, 1);
+}
+
+#tweetnation div.tweet div.text a.link:hover {
+	background-color: rgba(20, 120, 20, 0.3);
+}

@@ -1,0 +1,66 @@
+server:
+  - connect:livereload
+  - open
+  - watch
+
+build:
+  - clear
+  - cleanfolders
+  - jshint
+  - jscs
+  - mochacov:test
+  - concat:prod
+  - uglify
+  - copy:JSON
+  - json-minify
+  - clean:concat
+
+buildwithdocs:
+  - clear
+  - cleanfolders
+  - jshint
+  - jscs
+  - mochacov:test
+  - concat:prod
+  - uglify
+  - copy:JSON
+  - json-minify
+  - clean:concat
+  - jsdoc
+  - changelog
+
+cleanfolders:
+  - clear
+  - clean:coverage
+  - clean:documentation
+  - clean:build
+
+cov:
+  - clear
+  - clean:coverage
+  - mochacov:cov
+
+linttest:
+  - clear
+  - jshint
+  - jscs
+  - mochacov:test
+
+test:
+  - clear
+  - clean:coverage
+  - mochacov:test
+
+lint:
+  - clear
+  - jshint
+  - jscs
+
+minifyJSON:
+  - clear
+  - copy:JSON
+  - json-minify
+
+deploy:
+  - clear
+  - sftp

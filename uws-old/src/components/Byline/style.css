@@ -1,0 +1,15 @@
+.Byline {
+  display: flex;
+  color: #883333;
+  font-family: 'Arvo', serif;
+  font-size: 1.2em;
+  justify-content: flex-end;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .Byline {
+    font-size: 1.6em;
+  }
+}

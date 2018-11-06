@@ -1,0 +1,242 @@
+#spotmaps {
+	margin: 30px 0px 20px 0px;
+}
+
+iframe {
+	margin: 0 auto;
+	border-radius: 15px;	
+}
+
+a.name {
+	padding-top:75px
+}
+
+#wrapper {
+	width: 850px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+.grid_12 {
+	width: 600px;
+}
+
+#spotmaps .spotmap {
+	padding: 25px;
+/*	border: solid 1px rgba(120, 120, 220, 0.5);*/
+	background-color: rgba(255, 255, 255, 1);
+	margin: 30px 0px 30px 0px;
+	border-radius: 15px;
+*/
+}
+
+#spotmaps .history {
+	border-radius: 15px;
+	font-size: 20px;
+	font-weight: 700;
+	background-color: rgba(255,255,255,1);
+	color: rgba(255,255,255,0.2);
+}
+
+#spotmaps .history .next {
+	float:left;
+}
+
+#spotmaps .history .previous {
+	float:right;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+/*#spotmaps .spotmap:hover {
+	-moz-box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);
+	-webkit-box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);
+	box-shadow: 0 0 10px 10px rgba(255,255,255,0.3);
+}*/
+
+#spotmaps .spotmap p,
+#spotmaps .spotmap ul {
+	margin: 10px 0px 10px 0px;
+	color: rgba(0,0,0,1);
+}
+
+#spotmaps .spotmap .header {
+	background-color: rgba(235,235,235,0.8);
+	margin: 0px 0px 10px 0px;
+	border-radius: 15px;
+}
+
+span.date {
+	color: rgba(100,100,100,1);
+	font-size: 14px;
+	margin: 2px
+}
+
+.spotmap .spotmapbody img {
+	text-align: center;
+	margin: 20px 0px 20px 0px;
+	border-radius: 5px;
+}
+
+#spotmaps, #search {
+	font-family: 'MuseoSans', Georgia, sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 200;
+	letter-spacing: .015em;
+}
+
+#spotmaps h1 {
+	margin-top: 0px;
+	color: rgba(0,0,0,1);
+}
+
+#spotmaps h2 {
+	font-family: 'FCZizouSlab', Georgia, sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 32px;
+	letter-spacing: .02em;
+	background: none;
+/*	color: rgba(255, 255, 255, 0.8); */
+	color: rgba(0, 0, 0, 1);
+}
+
+#spotmaps h3 {
+	font-family: 'FCZizouSlab', Georgia, sans-serif;
+	font-size: 24px;
+	font-weight: 200;
+	line-height: 32px;
+	letter-spacing: .02em;
+	background: none;
+	color: rgba(142, 51, 50, 1);
+	margin: 15px 0px 15px 0px
+}
+
+div.canvas {
+	opacity: 0.5;
+	z-index: 100;
+	float:right;
+	position: relative;
+	padding-top: 2px;
+	padding-right: 2px;
+}
+
+.spotmapbody {
+	text-align: center;
+}
+
+#spotmaps .spotmap .footer {
+	border-top: solid 1px rgba(120, 120, 120, 1);
+	padding-top: 5px;
+	margin: 5px 0px 0px 0px;
+	clear: both;
+	color:rgba(0,0,0,1);
+}
+
+#spotmaps .taglist,
+#spotmaps .swatch,
+#spotmaps .category {
+	color: rgba(0, 0, 0, 1);
+	margin-top: 10px;
+}
+
+#spotmaps .swatch img {
+	padding: 2px 5px 2px 5px;
+	background-color: rgba(220,255,220,0.6);
+}
+
+#spotmaps .swatch img:hover {
+	background-color: rgba(100,200,100,0.5);
+}
+
+.footer .taglist span {
+	padding: 2px 5px 2px 5px;
+	line-height: 30px;
+	background-color: rgba(200,220,255,0.6);
+	color: rgba(20,20,20,0.7);
+}
+
+.footer .category span {
+	padding: 2px 5px 2px 5px;
+	background-color: rgba(220,255,220,0.6);
+	color: rgba(20,20,20,0.7);
+}
+
+.footer .category span:hover {
+	cursor: pointer;
+	background-color: rgba(100,200,100,0.5);
+}
+
+.footer .taglist span:hover {
+	cursor: pointer;
+	background-color: rgba(100,100,200,0.5);
+}
+
+.textspotmapbody ul li,
+.textspotmapbody ol li {
+	margin-left: 30px;
+}
+
+#leftSidebar {
+	z-index:1001;
+	left:10px;
+	top: 60px;
+	position: fixed;
+	font-size: 11px;
+	width: 200px;
+}
+
+#rightSidebar {
+	z-index:1001;
+	right: 220px;
+	top: 100px;
+	position: fixed;
+	font-size: 12px;
+	width: 200px;
+}
+
+#categoryList {
+	margin-top: 20px;
+}
+
+#tagList {
+	margin-top: 20px;
+	line-height: 14px;
+}
+
+#rightSidebar ul,
+#rightSidebar ul {
+	list-style: none;
+}
+
+#rightSidebar ul li.category,
+#rightSidebar ul li.link {
+	padding: 0px;
+	margin-top: -7px;
+}
+
+#rightSidebar ul li.category:hover,
+#rightSidebar ul li.link:hover {
+	cursor: pointer;
+}
+
+#rightSidebar ul li.category a,
+#rightSidebar #tagList a,
+#rightSidebar ul li.link a {
+	color: rgba(255,255,255,0.6);
+}
+
+#rightSidebar ul li.category a:hover,
+#rightSidebar #tagList a:hover,
+#rightSidebar ul li.link a:hover {
+	color: rgba(255,255,255,1);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.2);
+}
+
+img.main {
+	border-radius: 15px;
+}

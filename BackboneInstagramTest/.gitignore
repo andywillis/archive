@@ -1,0 +1,7 @@
+node_modules
+.tmp
+.sublime-project
+.sublime-workspace
+npm-debug.log
+auth.js
+.env

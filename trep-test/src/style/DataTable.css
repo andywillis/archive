@@ -1,0 +1,35 @@
+.DataTable {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+.DataTable .TableHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 400px) {
+  .DataTable {
+    display: block;
+  }
+  .DataTable .TableHeader {
+    flex-direction: row;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .DataTable {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .DataTable .TableHeader {
+    display: flex;
+    flex-direction: column;
+  }
+}

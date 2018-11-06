@@ -1,0 +1,15 @@
+.Entry {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+.Entry:first-child {
+  margin-top: 4em;
+}
+
+.Entry a {
+  cursor: pointer;
+  text-decoration: none;
+}

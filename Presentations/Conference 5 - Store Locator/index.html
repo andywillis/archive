@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Store Locator Improvements Project</title>
+
+		<meta name="description" content="Store Locator Improvements Project">
+		<meta name="author" content="Andy Willis &amp; Peter Shangov">
+
+		<!-- Hide from search engines -->
+		<meta name="robots" content="noindex">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/venda.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-state='first-slide' data-transition="linear" data-background-transition="slide">
+					<div class='main-header'>
+						<h2>Store Locator Improvement Project</h2>
+						<h3>Andy Willis<br/><small><a mailto="andrewwillis@venda.com">andrewwillis@venda.com</a></small></h3>
+						<h3>Peter Shangov<br/><small><a mailto="petershangov@venda.com">petershangov@venda.com</a></small></h3>
+					</div>
+				</section>
+<!--
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>The Convenience of</h2>
+					<h2>Self-service Delivery</h2>
+					<p>
+						<ul>
+							<li>Amazon lockers</li>
+							<li>Collect+ / Ebay integration</li>
+							<li>Argos / Ebay integration</li>
+							<li>ByBox</li>
+						</ul>
+					</p>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>ByBox / Infinity</h2>
+					<p>
+						Histories and how they work together.
+					</p>
+				</section>
+-->
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>Current Store Locator</h2>
+					<section>
+						<ul>
+							<li class="fragment">A limit to the number of stores
+								<ul class="fragment">
+									<li>Tesco workaround - Google Fusion tables</li>
+								</ul>
+							</li>
+							<li class="fragment">Reliance on jQuery UI</li>
+<!--							<li class="fragment">Unable to add new self-service store types</li>-->
+							<li class="fragment">Not responsive</li>
+							<li class="fragment">Multi-screen DTS workflow</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Step 1</h3>
+						<img src="assets/workflow1.png"/>
+					</section>
+					<section>
+						<h3>Step 2</h3>
+						<img src="assets/workflow2.png"/>
+					</section>
+					<section>
+						<h3>Step 3</h3>
+						<img src="assets/workflow3.png"/>
+					</section>
+					<section>
+						<h3>Step 4</h3>
+						<img src="assets/workflow4.png"/>
+					</section>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>Requirements</h2>
+					<ul>
+						<li class="fragment">Capitalise on self-service technologies</li>
+						<li class="fragment">Future-proof</li>
+						<li class="fragment">UI/UX improvements
+							<ul>
+								<li class="fragment">Responsive</li>
+								<li class="fragment">Fits with Showcase theme</li>
+								<li class="fragment">Slimline checkout workflow</li>
+							</ul></li>
+					</ul>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>New Store Locator</h2>
+					<section>
+						<ul>
+							<li class="fragment">Standardised data format</li>
+							<li class="fragment">No limit to number of available stores
+								<ul>
+									<li>However: limit to number of <span class="italic orange">retrieved</span> stores</li>
+								</ul>
+							</li>
+							<li class="fragment">No reliance on jQuery UI</li>
+							<li class="fragment">Responsive design - mobile first</li>
+							<li class="fragment">Reduced number of workflow steps</li>
+							<li class="fragment">JS templating / scaffolding</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Step 1</h3>
+						<img src="assets/workflow_1.png"/>
+					</section>
+					<section>
+						<h3>Step 2</h3>
+						<img src="assets/workflow_2.png"/>
+					</section>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>One template line!</h2>
+					<section class="bgdarkblue">
+						<h3>Current phase</h3>
+						<code>&lt;div class="storelocator" data-type="<span class="green">normal</span>|<span class="green">checkout</span>"&gt;&lt;/div&gt;</code>
+					</section>
+					<section class="bgdarkblue">
+						<h3>Next phase</h3>
+						<code>&lt;div class="storelocator" data-type="<span class="green">normal</span>|<span class="green">checkout</span>" <span class="blue">data-store="default,bybox,collectplus"</span>&gt;&lt;/div&gt;</code>
+					</section>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>Screenshots</h2>
+					<section>
+						<h3>On load</h3>
+						<img src="assets/stloc_loaded_collectplus.png"/>
+					</section>
+					<section>
+						<h3>Find me / Postcode search</h3>
+						<img src="assets/stloc_markers.png"/>
+					</section>
+					<section>
+						<h3>List view</h3>
+						<img src="assets/stloc_list.png"/>
+					</section>
+					<section>
+						<h3>Information window</h3>
+						<img src="assets/stloc_infowindow.png"/>
+					</section>
+					<section>
+						<h3>Show route</h3>
+						<img src="assets/stloc_route.png"/>
+					</section>
+					<section>
+						<h3>Store information</h3>
+						<img src="assets/stloc_storeinfo.png"/>
+					</section>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>Technical Details And Comparison</h2>
+					<section>
+						<h3>Lines Of Code</h3>
+						<img src="assets/js_lines.png"/>
+					</section>
+					<section>
+						<h3>Minified Size (k)</h3>
+						<img src="assets/js_minified.png"/>
+					</section>
+					<section>
+						<h3>Minified Size (k) - Redux</h3>
+						<img src="assets/js_minified_true.png"/>
+					</section>
+					<section>
+						<h3>Number of functions</h3>
+						<img src="assets/js_functions.png"/>
+					</section>
+					<section>
+						<h3>Function Chaining</h3>
+						<pre><code>
+				pseudoInit: function () {
+				  this
+    			    .getListOfStores()
+    			    .getStorelocatorType()
+    			    .addHTMLStructure()
+    			    .cacheStoreLocatorImages()
+    			    .positionList()
+    			    .clearLocalStorage()
+    			    .getDevice()
+    			    .positionOverlay()
+    			    .addSearchBar()
+    			    .positionErrorBar()
+    			    .hideStoreInfo();
+    		  return this;
+				}
+						</code></pre>
+					</section>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>Limitations</h2>
+					<p>
+						<ul>
+							<li class="fragment">Incomplete data.</li>
+							<li class="fragment">Inflexible APIs.</li>
+							<li class="fragment">Numerous API calls.</li>
+							<li class="fragment">Lots of images, particularly for markers</li>
+							<li class="fragment">Currently limited to just general stores &amp; Bybox</li>
+						</ul>
+					</p>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>Next steps</h2>
+					<p>
+						<ul>
+							<li class="fragment">Incorporate new design</li>
+							<li class="fragment">Code for new services</li>
+							<li class="fragment">Refactor image files</li>
+							<li class="fragment">Workflow styling</li>
+						</ul>
+					</p>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>Sandbox</h2>
+					<img src="assets/yeoman.png"/>
+					<p>
+						https://github.com/venda/VendaSandbox
+					</p>
+				</section>
+
+				<section data-transition="linear" data-background-transition="slide">
+					<h2>Questions from the assembled media</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				backgroundTransition: 'slide',
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
