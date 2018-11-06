@@ -1,0 +1,15 @@
+noscript
+  link(rel="stylesheet", href="/stylesheets/less/style.css")
+  div(id='noscript') Javascript required
+header(role="banner", id="header")
+  h1
+    a(href="/") Strider
+  nav(id="nav", class="menu")
+    ul(role="navigation", id="menu")
+      li
+        a New
+        ul
+          li(class="menuItem")
+            | <a rel="leanModal" name="newLocation" href="#newLocation">Starting Point</a>
+      li
+        a(href="/about", id="menu-about") About

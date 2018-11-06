@@ -1,0 +1,62 @@
+html, body {
+  margin:0;
+  padding:0;
+  height: 100%;
+  width: 100%;
+}
+
+header#header { text-align: center }
+header#header { background-color: @darkblue2 }
+
+#container {
+  margin:0 auto;
+  position: relative;
+  height:auto !important;
+  height:100%;
+  min-height:100%; 
+}
+
+footer#footer {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  bottom: 0;
+}
+
+footer#footer p {
+  margin: 10px 10px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+div#noscript {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+#loader { z-index: 1000; position: absolute; right: 0; top: 0; background-color: @offred; color: white; padding: 10px; visibility: hidden}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0
+}
+
+.clearfix:after {
+  clear: both;
+  content: '-';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0
+}

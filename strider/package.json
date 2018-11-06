@@ -1,0 +1,36 @@
+{
+  "name": "strider",
+  "preferGlobal": "false",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "app.js"
+  },
+  "subdomain": "strider",
+  "dependencies": {
+    "express": "3.x",
+    "jade": "0.27.7",
+    "static-asset": "0.5.0",
+    "dbox": "0.5.5",
+    "colors": "0.6.0-1",
+    "less-middleware": "0.1.x"
+  },
+  "author": {
+    "name": "Andy Willis",
+    "email": "awillis@lavabit.com"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "description": "Route and walk management system",
+  "keywords": [
+    "walk",
+    "route",
+    "wantsum",
+		"leaflet"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andywillis/strider.git"
+  },
+  "noAnalyze": true
+}

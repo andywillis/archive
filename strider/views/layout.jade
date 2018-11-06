@@ -1,0 +1,25 @@
+doctype 5
+html
+  head
+    title Strider
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    link(rel="stylesheet", href="/scripts/lib/leaflet/leaflet.css")
+    link(rel="stylesheet", href="/scripts/lib/fancybox/jquery.fancybox-1.3.4.css")
+    script(src="http://maps.google.com/maps/api/js?sensor=false")
+    script(src="/scripts/lib/jquery.min.js")
+    script(src="/scripts/lib/fancybox/jquery.fancybox-1.3.4.pack.js")
+    script(src="/scripts/lib/jquery.leanModal.js")
+    script(src="/scripts/lib/leaflet/leaflet.js")
+    script(src="/scripts/lib/underscore-min.js")
+    script(src="/scripts/lib/jsonPath.js")
+    script(src="/scripts/lib/keymaster.min.js")
+    script(src="/scripts/lib/core.js")
+    script(src=versionPath("/scripts/lib/strider.js"))
+    script(src=versionPath("/scripts/app/app.js"))
+  body
+    div(id="container")
+        include includes/header
+        block content
+        include includes/modal
+        include includes/footer
