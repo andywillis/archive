@@ -1,0 +1,15 @@
+* {
+  font-family: Georgia;
+}
+
+h1 {
+  color: #444455;
+}
+
+p {
+  line-height: 30px;
+}
+
+.hidden {
+ display: none;
+};

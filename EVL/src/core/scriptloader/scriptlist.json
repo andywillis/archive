@@ -1,0 +1,21 @@
+{
+    "polyfills": [
+      "core/modules/polyfills/bespoke.js",
+      "core/modules/polyfills/standard.js"
+      ],
+    "boot": [
+      "lib/js/jquery/dist/jquery.js"
+      ],
+    "core": [
+      "core/modules/company/company.js",
+      "core/modules/utilities/utilities.js",
+      "core/initialise/initialise.js"
+      ],
+    "section": {
+        "main": [
+          "core/pages/main/main.js",
+          "core/modules/checkout/checkout.js"
+          ],
+        "checkout": ["core/modules/checkout/checkout.js"]
+    }
+}

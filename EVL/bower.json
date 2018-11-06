@@ -1,0 +1,23 @@
+{
+  "name": "EVL",
+  "version": "0.0.0",
+  "homepage": "https://github.com/andywillis/EVL",
+  "authors": [
+    "Andy Willlis <github@awillis.fastmail.fm>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/lib/js",
+    "test",
+    "tests",
+    "src/lib/js"
+  ],
+  "devDependencies": {
+    "jquery": "1.11.1",
+    "labjs": "*"
+  }
+}
