@@ -1,0 +1,145 @@
+#gauge {
+  margin-top: calc(50px + 2em);
+  display: flex;
+  flex-direction: column;
+}
+
+.gauge {
+  position: relative;
+}
+
+button {
+  width: 50%;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
+  padding: 0.3em;
+  background-color: #efefef;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.background {
+  z-index: 0;
+  position: absolute;
+  background-color: #454545;
+  top: 0;
+  border-radius: 300px 300px 0 0;
+}
+
+.bottom {
+  z-index: 2;
+  background-color: #fff;
+  position: absolute;
+}
+
+.center {
+  z-index: 3;
+  position: absolute;
+  background-color: #E91E63;
+  margin-right: auto;
+  border-radius: 300px 300px 0 0;
+}
+
+.marker {
+  z-index: 4;
+  background-color: #454545;
+  position: absolute;
+  width: 1px;
+}
+
+.needle {
+  z-index: 5;
+  background-color: white;
+  height: 3px;
+  position: absolute;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.anchor {
+  z-index: 6;
+  position: absolute;
+  background-color: white;
+  margin-right: auto;
+  border-radius: 300px 300px 0 0;
+}
+
+
+.labels {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+
+.label__value {
+  left: 50%;
+  text-align: center;
+}
+
+.label__min {
+  display: table-cell;
+  text-align: left;
+}
+
+.label__max {
+  display: table-cell;
+  text-align: right;
+}
+
+.gauge { height: calc(120px + 3em); font-size: 1.2em }
+.container { width: 240px; height: 120px; }
+.marker { height: 115px; left: 119.5px; width: 3px; }
+.background { width: 240px; height: 120px; }
+.center { width: 230px; height: 105px; margin-left: 5px; top: 10px}
+.needle { left: 121px; top: 117px; width: 115px; height: 5px; border: 1px solid black; }
+.anchor { width: 20px; height: 10px; border: 1px solid black; margin-left: 110px; top: 110px;}
+.labels { top: 120px; width: 240px; }
+.label__low { width: 48px; }
+.label__high { width: 48px; }
+
+@media only screen and (min-width: 800px) {
+  button { font-size: 1.6em }
+  .gauge { height: calc(300px + 3em); font-size: 2em;}
+  .container { width: 600px; height: 300px; }
+  .marker { height: 30px; left: 300px; top: 260px ;}
+  .background { width: 600px; height: 300px; }
+  .center { width: 580px; height: 270px; margin-left: 10px; top: 20px; }
+  .needle { left: 300px; top: 290px; width: 290px; height: 10px; border: 2px solid black;}
+  .anchor { width: 40px; height: 20px; border: 2px solid black; margin-left: 280px; top: 278px;}
+  .labels { top: 300px; width: 600px; }
+  .label__low { width: 60px; }
+  .label__high { width: 60px; }
+}
+
+.gauge__liveupdate .needle {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}            
+
+.needle {
+  -webkit-transform: rotate(-.50turn);
+  -moz-transform: rotate(-.50turn);
+  -ms-transform: rotate(-.50turn);
+  -o-transform: rotate(-.50turn);
+  transform: rotate(-.50turn);
+}

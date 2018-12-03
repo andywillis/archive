@@ -1,0 +1,1 @@
+<Error><Code>MethodNotAllowed</Code><Message>The specified method is not allowed against this resource.</Message><Method>PUT</Method><ResourceType>SERVICE</ResourceType><RequestId>F31649D8C7B096C7</RequestId><HostId>5qbnmDtsT3Y590nzNYrlcOw5jUytWPLNYWLgjHZu6m91YOfFyN6IT51x8zGmqhh0shc4Z1jyMQA=</HostId></Error>

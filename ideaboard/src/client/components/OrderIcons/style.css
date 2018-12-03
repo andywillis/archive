@@ -1,0 +1,43 @@
+.ordering ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.ordering li {
+  display: inline-block;
+}
+
+.ordering button {
+  font-size: 0.8em;
+  width: 2.5em;
+  min-height: 6vh;
+  border: 1px solid white;
+}
+
+.ordering button:hover,
+.ordering .selected {
+  background-color: #eeeeff;
+  border: 1px solid black;
+  transition: border 0.5s linear;
+  cursor: pointer;
+}
+
+.ordering li:first-child {
+  margin-right: 0.5em;
+}
+
+/* Ipads ----------- */
+@media only screen
+and (min-width : 600px) { 
+  .ordering button {
+    min-height: 5vh;
+  }  
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1000px) {
+  .ordering button {
+    min-height: 8vh;
+  }  
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Maitree');
+
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea {
+  font-family: 'Maitree', serif;
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Maitree', serif;
+}
+
+:-moz-placeholder {
+  font-family: 'Maitree', serif;
+}
+
+::-moz-placeholder {
+  font-family: 'Maitree', serif;
+}
+
+:-ms-input-placeholder {
+  font-family: 'Maitree', serif;
+}
+
+html, body {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'Maitree', serif;
+  color: black;
+  font-weight: 400;
+}
+
+/* Ipads ----------- */
+@media only screen
+and (min-width : 300px) {
+  body {
+    font-size: 1.4em;
+  }
+}
+
+/* Ipads ----------- */
+@media only screen
+and (min-width : 600px) {
+  body {
+    font-size: 1.7em;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1000px) {
+  body {
+    font-size: 2em;
+  }
+}

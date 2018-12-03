@@ -1,0 +1,27 @@
+.empty {
+  margin: 2em 0em 0em 0em;
+  text-align: center;
+}
+
+.ideas {
+  display: grid;
+  padding: 0.5em;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 600px) {
+  .ideas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1000px) {
+  .ideas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

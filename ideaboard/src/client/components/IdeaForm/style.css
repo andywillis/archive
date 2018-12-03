@@ -1,0 +1,136 @@
+.form {
+  border: 1px solid #676767;
+  display: flex;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(137,137,170,1);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(137,137,170,1);
+  box-shadow: 0px 0px 6px 3px rgba(137,137,170,1);
+}
+
+.blue {
+  background-color: rgb(163, 175, 201);
+}
+
+.green {
+  background-color: rgb(168, 201, 166);
+}
+
+.red {
+  background-color: rgb(195, 166, 166);
+}
+
+.title {
+  font-family: 'Maitree', serif;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 100%;
+  border-bottom: 1px solid #565656;
+}
+
+.textarea {
+  font-family: 'Maitree', serif;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 100%;
+  min-height: 12vh;
+  resize: none;
+}
+
+.newIdea .textarea {
+  min-height: 3vh;
+}
+
+.bottomBar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  border-top: 1px solid #565656;
+  background-color: #efefef;
+}
+
+.count {
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0.25em;
+}
+
+.add, .update {
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  background-color: #acd3ac;
+  border: 1px solid #acd3ac;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  text-align: center;
+  background-color: #efefef;
+  transition: background-color 1s ease-in-out;
+  -webkit-transition: background-color 1s ease-in-out;
+}
+
+.updated {
+  background-color: #acd3ac;
+  transition: background-color 1s ease-in-out;
+  -webkit-transition: background-color 1s ease-in-out;
+}
+
+.delete {
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  background-color: #d3acac;
+  border: 1px solid #acd3ac;
+}
+
+.delete:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+
+.add:not([disabled]):hover,
+.update:not([disabled]):hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.colorStrip {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+/* Ipads ----------- */
+@media only screen
+and (min-width : 600px) { 
+  .newIdea {
+    width: 80%;
+  }
+  .textarea {
+    min-height: 10vh;
+  }
+  .newIdea .textarea {
+    min-height: 7vh;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1000px) {
+  .newIdea {
+    width: 60%;
+  }
+  .textarea {
+    min-height: 20vh;
+  }
+  .newIdea .textarea {
+    min-height: 10vh;
+  }
+}
