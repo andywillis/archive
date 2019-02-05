@@ -1,0 +1,75 @@
+.projects {
+  font-size: 1em;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.projects table {
+  margin-top: 1em;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.add {
+  font-size: 0.8em;
+  padding: 0.5em;
+  border: 1px solid #898989;
+}
+
+.add:hover {
+  cursor: pointer;
+  background-color: rgb(206, 235, 206);
+}
+
+.projects td {
+  text-align: center;
+  width: 25%;
+  padding: 0.4em;
+  border-top: 1px solid #ababab;
+  border-bottom: 1px solid #ababab;
+}
+
+.projects tbody tr:not(:last-child):not(:first-child) {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.projects tbody tr:first-child {
+  border-bottom: 1px solid white;
+}
+
+.projects tbody tr:last-child {
+  border-top: 1px solid white;
+}
+
+.projects thead tr {
+  background-color: rgb(42, 42, 75);
+  color: white;
+  border: 1px solid black
+}
+
+.headerActive {
+  background-color: rgb(72, 105, 72);
+}
+
+.projects thead th:not(.headerActive):hover {
+  cursor: pointer;
+  background-color: rgb(72, 72, 105);
+}
+
+.projects tbody tr:hover {
+  cursor: pointer;
+  background-color: rgb(221, 221, 241);
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 800px) {
+  .projects {
+    font-size: 1.2em;
+    margin: 0 auto;
+    width: 80%;
+  }
+}

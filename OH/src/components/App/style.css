@@ -1,0 +1,17 @@
+.app header,
+.app footer {
+  margin: 0 2em 0 2em;
+}
+
+.app header {
+  text-align: center;
+  font-size: 2em;
+}
+
+.app main {
+  margin: 2em;
+}
+
+.app footer {
+  text-align: right;
+}

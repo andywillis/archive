@@ -1,0 +1,48 @@
+.project {
+  font-size: 1.2em;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.project section {
+  margin-top: 1em;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+.back {
+  padding: 0.5em;
+}
+
+.back:hover {
+  cursor: pointer;
+  background-color: rgb(206, 235, 206);
+}
+
+.name {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.id {
+  margin-bottom: 1em;
+}
+
+.id, created, updated {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 800px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+}
